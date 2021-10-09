@@ -679,68 +679,7 @@ html {
 
 footer {
   color: #fff;
-  @media screen and (max-width: 959px) {
-    margin: 25rem 0 0 0;
-  }
-  @media screen and (max-width: 559px) {
-    margin: 5rem 0 0 0;
-    opacity: 1;
-    transform: none;
-  }
-  opacity: 0;
-  transform: scale(1);
-  transition: all 1000ms 0ms ease;
-  &.animated {
-    opacity: 1;
-    transform: none;
-  }
-  .footer-top {
-    text-align: center;
-    background-color: rgba($subColor, 0.75);
-    padding: 5rem 0;
-    @media screen and (max-width: 559px) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    h3 {
-      font: normal normal normal 10rem/12rem Oriya MN;
-      @media screen and (max-width: 959px) {
-        font: normal normal normal 4rem/5rem Oriya MN;
-      }
-      @media screen and (max-width: 559px) {
-        font: normal normal normal 2.5rem/3rem Oriya MN;
-      }
-    }
-    p {
-      br {
-        display: none;
-      }
-      font: normal normal normal 3rem/5.5rem Oriya MN;
-      @media screen and (max-width: 959px) {
-        font: normal normal normal 1.8rem/2rem Oriya MN;
-      }
-      @media screen and (max-width: 559px) {
-        font: normal normal normal 1.2rem/1.5rem Oriya MN;
-        br {
-          display: block;
-        }
-      }
-    }
-    .sns {
-      width: 15rem;
-      padding: 1.6rem;
-      margin: 0 auto 3rem;
-      @media screen and (max-width: 959px) {
-        width: 10rem;
-      }
-      @media screen and (max-width: 559px) {
-        width: 6rem;
-        padding: 0rem;
-        margin: 0 1.5rem;
-      }
-    }
-  }
+  margin: 5rem;
   .footer-bottom {
     padding: 3rem 0;
     background-color: $subColor;
