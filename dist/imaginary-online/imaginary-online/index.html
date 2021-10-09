@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMAGINARY ONLINE</title>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  <script src="https://kit.fontawesome.com/1af2190f68.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div id="modalWrapper" class="modal-wrapper">
+    <div id="modal" class="modal">
+      <div class="modal-header">
+        <p>カート</p>
+        <i id="closeCart" class="fas fa-times"></i>
+      </div>
+      <hr>
+      <div id="modalBody" class="modal-body">
+        <p id="pop">カートに商品が入っていません。</p>
+      </div>
+      <hr>
+      <div class="modal-footer">
+        <button>チェックアウト・￥<span id="total"></span></button>
+      </div>
+    </div>
+  </div>
+  <header>
+    <div class="head-left">
+      <h1 class="logo"><img src="./img/top-img/imaginary-logoB.png" alt=""></h1>
+      <ul class="select-parts">
+        <li class="women">women</li>
+        <li class="men">men</li>
+        <li class="kids">kids</li>
+      </ul>
+    </div>
+    <ul class="head-right">
+      <li class="search-area">
+        <input type="text">
+        <i class="fas fa-search"></i>
+      </li>
+      <li class="user-area">
+        <i id="faUser" class="fas fa-user"></i>
+        <ul id="userMenu">
+          <li>新規登録</li>
+          <li>ログイン</li>
+          <li>会員様へ</li>
+          <li>はじめてのお客様へ</li>
+        </ul>
+      </li>
+      <li><i class="fas fa-heart"></i></li>
+      <li class="cart-area">
+        <i id="openCart" class="fas fa-shopping-cart"><span id="quantity" class="quantity"></span></i>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <div class='img-wrap hero'><img src='./img/top-img/hero.jpg' alt=''></div>
+    <div class="wrapper">
+      <div class="select-area">
+        <div>
+          <h3>新作商品</h3>
+          <ul class="select-parts">
+            <li class="women">women</li>
+            <li class="men">men</li>
+            <li class="kids">kids</li>
+          </ul>
+        </div>
+        <div>
+          <h3>期間限定</h3>
+          <ul class="select-parts">
+            <li class="women">women</li>
+            <li class="men">men</li>
+            <li class="kids">kids</li>
+          </ul>
+        </div>
+        <div>
+          <h3>人気商品</h3>
+          <ul class="select-parts">
+            <li class="women">women</li>
+            <li class="men">men</li>
+            <li class="kids">kids</li>
+          </ul>
+        </div>
+      </div>
+      <section class="pick-up">
+        <h2 class="title-parts">
+          <p>pick up</p>
+          <p>今週の特集</p>
+        </h2>
+        <div class="container">
+          <div class='img-wrap'><img src='./img/top-img/pick-up1.jpg' alt=''></div>
+          <div class='img-wrap'><img src='./img/top-img/pick-up2.jpg' alt=''></div>
+        </div>
+        <button class="btn-parts">特集をすべて見る</button>
+      </section>
+      <section class="for-you">
+        <h2 class="title-parts">
+          <p>recommend for</p>
+          <p>あなたへのおすすめ</p>
+        </h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/recommend/for-you01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/recommend/for-you02.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/recommend/for-you03.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/recommend/for-you04.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/recommend/for-you05.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/recommend/for-you06.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/recommend/for-you07.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+      <section class="look">
+        <h2 class="title-parts">
+          <p>look for</p>
+          <p>商品を探す</p>
+        </h2>
+        <div class="filter-area">
+          <ul id="selecter" class="select-parts">
+            <li class="women active">women</li>
+            <li class="men">men</li>
+            <li class="kids">kids</li>
+          </ul>
+          <ul id="category" class="category-area">
+            <li data-target='outer' class="outer active">アウター</li>
+            <li data-target='bottom' class="bottom">ボトムス</li>
+            <li data-target='sweater' class="sweater">セーター</li>
+            <li data-target='shirt' class="shirt">シャツ</li>
+            <li data-target='inner' class="inner">インナー</li>
+            <li data-target='goods' class="goods">グッズ</li>
+          </ul>
+        </div>
+        <div id="swichedArea" class="swiched-area">
+          <article class="women outer active">
+            <p>アウター</p>
+            <div class="container">
+              <figure data-id='women-outer1'>
+                <div class='img-wrap'><img src='./img/outer-w/item-w-o1.jpg' alt=''></div>
+                <figcaption>
+                  <small>women</small>
+                  <p>チェスターコート</p>
+                  <small>新作</small>
+                  <p class="price">￥14,900</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='women-outer2'>
+                <div class='img-wrap'><img src='./img/outer-w/item-w-o2.jpg' alt=''></div>
+                <figcaption>
+                  <small>women</small>
+                  <p>ボアフリースブルゾン</p>
+                  <small>新作</small>
+                  <p class="price">￥4,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='women-outer3'>
+                <div class='img-wrap'><img src='./img/outer-w/item-w-o3.jpg' alt=''></div>
+                <figcaption>
+                  <small>women</small>
+                  <p>ステンカラーコート</p>
+                  <small>新作</small>
+                  <p class="price">￥12,900</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='women-outer4'>
+                <div class='img-wrap'><img src='./img/outer-w/item-w-o4.jpg' alt=''></div>
+                <figcaption>
+                  <small>women</small>
+                  <p>ポケッタブルパーカ</p>
+                  <small>新作</small>
+                  <p class="price">￥2,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='women-outer5'>
+                <div class='img-wrap'><img src='./img/outer-w/item-w-o5.jpg' alt=''></div>
+                <figcaption>
+                  <small>women</small>
+                  <p>レザージャケット</p>
+                  <small>新作</small>
+                  <p class="price">￥7,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='women-outer6'>
+                <div class='img-wrap'><img src='./img/outer-w/item-w-o6.jpg' alt=''></div>
+                <figcaption>
+                  <small>women</small>
+                  <p>ブロックテックコート</p>
+                  <small>新作</small>
+                  <p class="price">￥7,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+            </div>
+          </article>
+          <article class="women bottom">
+            <p>ボトムス</p>
+            <div class="container">
+              <figure data-id='women-bottom1'>
+                <div class='img-wrap'><img src='./img/pants-w/item-w-p1.jpg' alt=''></div>
+                <figcaption>
+                  <small>women</small>
+                  <p>オーバーオールジーンズ</p>
+                  <small>新作</small>
+                  <p class="price">￥7,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='women-bottom2'>
+                <div class='img-wrap'><img src='./img/pants-w/item-w-p2.jpg' alt=''></div>
+                <figcaption>
+                  <small>women</small>
+                  <p>ショートジーンズパンツ</p>
+                  <small>新作</small>
+                  <p class="price">￥3,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='women-bottom3'>
+                <div class='img-wrap'><img src='./img/pants-w/item-w-p3.jpg' alt=''></div>
+                <figcaption>
+                  <small>women</small>
+                  <p>ストレッチスカート</p>
+                  <small>新作</small>
+                  <p class="price">￥2,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='women-bottom4'>
+                <div class='img-wrap'><img src='./img/pants-w/item-w-p4.jpg' alt=''></div>
+                <figcaption>
+                  <small>women</small>
+                  <p>ワイドジーンズパンツ</p>
+                  <small>新作</small>
+                  <p class="price">￥3,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='women-bottom5'>
+                <div class='img-wrap'><img src='./img/pants-w/item-w-p5.jpg' alt=''></div>
+                <figcaption>
+                  <small>women</small>
+                  <p>プリーツミニスカート</p>
+                  <small>新作</small>
+                  <p class="price">￥2,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='women-bottom6'>
+                <div class='img-wrap'><img src='./img/pants-w/item-w-p6.jpg' alt=''></div>
+                <figcaption>
+                  <small>women</small>
+                  <p>シフォンロングスカート</p>
+                  <small>新作</small>
+                  <p class="price">￥3,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+            </div>
+          </article>
+          <article class="women sweater">
+            <p>Coming Soon...</p>
+          </article>
+          <article class="women shirt">
+            <p>Coming Soon...</p>
+          </article>
+          <article class="women inner">
+            <p>Coming Soon...</p>
+          </article>
+          <article class="women goods">
+            <p>Coming Soon...</p>
+          </article>
+          <article class="men outer">
+            <p>アウター</p>
+            <div class="container">
+              <figure data-id='men-outer1'>
+                <div class='img-wrap'><img src='./img/outer-m/item-m-o1.jpg' alt=''></div>
+                <figcaption>
+                  <small>men</small>
+                  <p>オーバージャケット</p>
+                  <small>新作</small>
+                  <p class="price">￥12,900</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='men-outer2'>
+                <div class='img-wrap'><img src='./img/outer-m/item-m-o2.jpg' alt=''></div>
+                <figcaption>
+                  <small>men</small>
+                  <p>ライトレザージャケット</p>
+                  <small>新作</small>
+                  <p class="price">￥4,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='men-outer3'>
+                <div class='img-wrap'><img src='./img/outer-m/item-m-o3.jpg' alt=''></div>
+                <figcaption>
+                  <small>men</small>
+                  <p>モッズコート</p>
+                  <small>新作</small>
+                  <p class="price">￥7,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='men-outer4'>
+                <div class='img-wrap'><img src='./img/outer-m/item-m-o4.jpg' alt=''></div>
+                <figcaption>
+                  <small>men</small>
+                  <p>デニムジャケット</p>
+                  <small>新作</small>
+                  <p class="price">￥3,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='men-outer5'>
+                <div class='img-wrap'><img src='./img/outer-m/item-m-o5.jpg' alt=''></div>
+                <figcaption>
+                  <small>men</small>
+                  <p>スエットプルパーカ</p>
+                  <small>新作</small>
+                  <p class="price">￥3,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='men-outer6'>
+                <div class='img-wrap'><img src='./img/outer-m/item-m-o6.jpg' alt=''></div>
+                <figcaption>
+                  <small>men</small>
+                  <p>レザージャケット</p>
+                  <small>新作</small>
+                  <p class="price">￥5,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+            </div>
+          </article>
+          <article class="men bottom">
+            <p>ボトムス</p>
+            <div class="container">
+              <figure data-id='men-bottom1'>
+                <div class='img-wrap'><img src='./img/pants-m/item-m-p1.jpg' alt=''></div>
+                <figcaption>
+                  <small>men</small>
+                  <p>ドライウェットパンツ</p>
+                  <small>新作</small>
+                  <p class="price">￥2,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='men-bottom2'>
+                <div class='img-wrap'><img src='./img/pants-m/item-m-p2.jpg' alt=''></div>
+                <figcaption>
+                  <small>men</small>
+                  <p>スキニーフィットチノ</p>
+                  <small>新作</small>
+                  <p class="price">￥2,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='men-bottom3'>
+                <div class='img-wrap'><img src='./img/pants-m/item-m-p3.jpg' alt=''></div>
+                <figcaption>
+                  <small>men</small>
+                  <p>ストレッチジーンズ</p>
+                  <small>新作</small>
+                  <p class="price">￥3,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='men-bottom4'>
+                <div class='img-wrap'><img src='./img/pants-m/item-m-p4.jpg' alt=''></div>
+                <figcaption>
+                  <small>men</small>
+                  <p>ボアスウェットパンツ</p>
+                  <small>新作</small>
+                  <p class="price">￥3,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='men-bottom5'>
+                <div class='img-wrap'><img src='./img/pants-m/item-m-p5.jpg' alt=''></div>
+                <figcaption>
+                  <small>men</small>
+                  <p>スキニージーンズ</p>
+                  <small>新作</small>
+                  <p class="price">￥2,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+              <figure data-id='men-bottom6'>
+                <div class='img-wrap'><img src='./img/pants-m/item-m-p6.jpg' alt=''></div>
+                <figcaption>
+                  <small>men</small>
+                  <p>ヴィンテージチノ</p>
+                  <small>新作</small>
+                  <p class="price">￥6,990</p>
+                </figcaption>
+                <button><i class="fas fa-cart-plus"></i></button>
+              </figure>
+            </div>
+          </article>
+          <article class="men sweater">
+            <p>Coming Soon...</p>
+          </article>
+          <article class="men shirt">
+            <p>Coming Soon...</p>
+          </article>
+          <article class="men inner">
+            <p>Coming Soon...</p>
+          </article>
+          <article class="men goods">
+            <p>Coming Soon...</p>
+          </article>
+          <article class="kids outer">
+            <p>Coming Soon...</p>
+          </article>
+          <article class="kids bottom">
+            <p>Coming Soon...</p>
+          </article>
+          <article class="kids sweater">
+            <p>Coming Soon...</p>
+          </article>
+          <article class="kids shirt">
+            <p>Coming Soon...</p>
+          </article>
+          <article class="kids inner">
+            <p>Coming Soon...</p>
+          </article>
+          <article class="kids goods">
+            <p>Coming Soon...</p>
+          </article>
+        </div>
+      </section>
+      <section class="news">
+        <h2 class="title-parts">
+          <p>news</p>
+          <p>ニュース</p>
+        </h2>
+        <div class="container">
+          <div>
+            <article>
+              <div class='img-wrap'><img src='./img/top-img/news-pic1.jpg' alt=''></div>
+              <div class="text-box">
+                <p>毎週更新！<br>お店の人気商品ランキング！</p>
+                <p class="date">2020.10.01</p>
+              </div>
+            </article>
+            <article>
+              <div class='img-wrap'><img src='./img/top-img/news-pic2.jpg' alt=''></div>
+              <div class="text-box">
+                <p>コーディネートの主役になる、<br>万能な”カラーシャツ”特集！</p>
+                <p class="date">2020.10.06</p>
+              </div>
+            </article>
+          </div>
+          <div>
+            <article>
+              <div class='img-wrap'><img src='./img/top-img/news-pic3.jpg' alt=''></div>
+              <div class="text-box">
+                <p>絶対に間違いのないWeb限定！<br>IMAGINARY’s Selection</p>
+                <p class="date">2020.10.13</p>
+              </div>
+            </article>
+            <article>
+              <div class='img-wrap'><img src='./img/top-img/news-pic4.jpg' alt=''></div>
+              <div class="text-box">
+                <p>テレワークでも好印象！<br>メンズドレスバイヤーが選ぶ<br>スマートビズアイテム！</p>
+                <p class="date">2020.10.27</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <button class="btn-parts"> ニュースをすべて見る</button>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-body">
+      <div class="footer-logo-area">
+        <div class='img-wrap'><img src='./img/top-img/imaginary-logoB.png' alt=''></div>
+        <div class="links">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+      <div class="site-map-area">
+        <ul>
+          <li>SHOP</li>
+          <li>レディース</li>
+          <li>メンズ</li>
+          <li>キッズ</li>
+          <li>ホーム</li>
+        </ul>
+        <ul>
+          <li>企業情報</li>
+          <li>採用情報</li>
+          <li>グループについて</li>
+          <li>企業責任</li>
+          <li>プレス</li>
+          <li>ＩＲ情報</li>
+        </ul>
+        <ul>
+          <li>Corporate governance</li>
+          <li>ヘルプ</li>
+          <li>カスタマーサービス</li>
+          <li>店舗検索</li>
+          <li>法規&amp;プライバシー</li>
+          <li>お問い合わせ</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <ul>
+        <li>日本</li>
+        <li>個人情報の取り扱い</li>
+        <li>サイトマップ</li>
+      </ul>
+      <p>&copy;2020 IMAGINARY ONLINE</p>
+    </div>
+  </footer>
+  <script src="./js/font.js"></script>
+  <script src="./js/base.js"></script>
+</body>
+
+</html>

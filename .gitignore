@@ -1,0 +1,4 @@
+env.php
+.vscode
+/dist/css
+/node_modules

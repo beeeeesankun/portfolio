@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang=ja dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Restaurant AMORE</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="modal" id="modal">
+    <menu>
+      <div class="icon" id="modalOut">
+        <i class="far fa-times-circle"></i>
+      </div>
+      <ul>
+        <li data-tgt='home'>Home</li>
+        <li data-tgt='menu'>Menu</li>
+        <li data-tgt='event'>Event</li>
+        <li data-tgt='access'>Access</li>
+        <li data-tgt='reservation'>Reservation</li>
+      </ul>
+    </menu>
+  </div>
+  <div id="logos" class="logos">
+    <h1><i class="fas fa-bars" id="modalIn"></i>Restaurant<i class="fas fa-leaf"></i>AMORE</h1>
+  </div>
+  <main>
+    <div class="left-veiw">
+      <div class="home left-page part active"></div>
+      <div class="menu left-page part"></div>
+      <div class="event left-page part"></div>
+      <div class="access left-page part"></div>
+      <div class="reservation left-page part"></div>
+    </div>
+    <div class="right-veiw">
+      <div class="home right-page part active">
+        <div class="center">
+          <div class="img-wrap"><img src="./img/amore-logo.png" alt=""></div>
+          <p>
+            Amoreとは、イタリア語で’愛’という意味。<br>あなたの’愛する人’との大切な時間を提供します。<br>また、ここがあなたの’愛する場所’<br>になることを願っています。<br>
+          </p>
+        </div>
+      </div>
+      <div class="menu right-page part">
+        <h2>Menu</h2>
+        <div class="foods-menu">
+          <h3>A LA CARTE / アラカルト</h3>
+          <h4>本日のスープ</h4>
+          <p>Soup of the Day / 1,600</p>
+          <h4>ミネストローネ</h4>
+          <p>omato Soup with Diced Vegetables / 1,600</p>
+          <h4>シーザーサラダ　グリルベーコン または チキン</h4>
+          <p>Salad with Parmessan Cheese served with Grilled Bacon or Chicken / 2,100</p>
+          <h4>オーガニック野菜サラダ　和風ドレッシング または 赤ワインビネガードレッシング</h4>
+          <p>Organic Leaf & Herb Salad with Japanese Soy or Red Wine Vinegar Dressing / 2,400</p>
+          <h4>レギューム　季節野菜の取り合わせ　ハーブ</h4>
+          <p>Seasonal Vegetables with Herbs / 3,200</p>
+          <p>MAIN</p>
+          <h4>白子　蕗の薹</h4>
+          <p>Pan-fried Soft Roe with Butterbur Sprout / 3,800</p>
+          <h4>エイフィレ ”カスベ”　ムニエル</h4>
+          <p>Skate Wing Fillet Meunière / 4,000</p>
+          <h4>ホッキ貝　ウド　飯</h4>
+          <p>autéed Surf Clam with Udo and Rice / 5,000</p>
+          <h4>オマール海老　大根　ソースアメリケーヌ</h4>
+          <p>Boiled Lobster with Daikon and Sauce Américaine / 6,800</p>
+          <h4>クエ　白菜</h4>
+          <p>Braised Long tooth Grouper with Chinese Cabbage / 7,200</p>
+          <h4>鶏もも　菜の花</h4>
+          <p>Grilled Chicken Thigh with Canola Flower / 3,800</p>
+          <h4>豚　ゆり根</h4>
+          <p>Grilled Pork with Lily Root / 4,200</p>
+          <h4>鴨　ソースサルミ</h4>
+          <p>rilled Duck with Sauce Salmis / 8,000</p>
+          <h4>鹿　りんご　チーズ</h4>
+          <p>Grilled Venison with Apple and Cheese / 8,500</p>
+          <h4>仔羊　ニョッキ　ロックフォール</h4>
+          <p>Grilled Lamb with Gnocchi and Blue Cheese / 9,000</p>
+          <h4>牛　レフォール　ソースボルドレーズ</h4>
+          <p>Grilled Beef with Horseradish and Red Wine Sauce / 9,800</p>
+          <h4>牛　トリュフ</h4>
+          <p>Grilled Beef with Truffle / 15,000</p>
+          <p>SIDES</p>
+          <h4>じゃが芋のグラタン</h4>
+          <p>Potato Gratin / 1,200</p>
+          <h4>ポテト　トリュフ</h4>
+          <p>French Fries with Truffle Flavor / 1,500</p>
+          <h4>スチームベジタブル</h4>
+          <p>Steamed Vegetables / 1,500</p>
+          <p>DESSERT</p>
+          <h4>焼き苺　ソルベ</h4>
+          <p>Sautéed Strawberry with Sherbet / 1,500</p>
+          <h4>マダガスカル産バニラのクレームブリュレと木苺のソルベ</h4>
+          <p>Vanilla Crème Brûlée and Raspberry Sherbet / 1,240</p>
+          <h4>クラシカルなティラミスとトンカ豆のアイス</h4>
+          <p>Classic Tiramisu with Tonka Bean Ice Cream / 1,240</p>
+          <h4>JPチーズケーキ</h4>
+          <p>JP Cheese Cake / 1,240</p>
+          <br><br>
+          <small>
+            <p>表示価格には8%消費税、サービス料15％が加算されます。<br>米類の生産地情報については、スタッフにおたずねください。<br>All prices are in Japanese Yen. 8%
+              consumption tax and 15% service charge will be added.<br>For inquiries about rice-based foods, kindly ask
+              our service staff.</p>
+          </small>
+        </div>
+      </div>
+      <div class="event right-page part">
+        <h2>Event</h2>
+        <article class="wedding">
+          <h3>Wedding</h3>
+          <div class="inline">
+            <div class="base">
+              <img src="./img/wedding.jpg" alt="">
+            </div>
+            <div class="content">
+              <h4>ご家族・ご友人との距離が近く、ゲストと楽しめる会場をご用意</h4>
+              <p>大切な家族・友人と一緒に楽しみたいとお考えの方向けに、ゲストとの距離が近く楽しめる会場をご用意。ホテルや専門式場のような豪華さはありませんが、招待客と共に楽しむにはちょうどいい距離感です。</p>
+            </div>
+          </div>
+        </article>
+        <article class="birthday">
+          <h3>Birthday</h3>
+          <div class="inline">
+            <div class="base">
+              <img src="./img/birthday.jpg" alt="">
+            </div>
+            <div class="content">
+              <h4>誕生日を特別なバースデーケーキでお祝いしませんか？</h4>
+              <p>飾り付けや文字入れなど、お客様のご用途に合わせてご希望どおりのものに仕上がるよう、細やかに対応いたします。どうぞ、お気軽にお申し付けください。</p>
+            </div>
+          </div>
+        </article>
+        <article class="other">
+          <h3>Other</h3>
+          <div class="inline">
+            <div class="base">
+              <img src="./img/other.jpg" alt="">
+            </div>
+            <div class="content">
+              <h4>Other</h4>
+              <p>その他各種イベント承ります。</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="access right-page part">
+        <h2>Access</h2>
+        <p>住所 <br>〒108-0073 東京都港区三田２丁目５−４</p>
+        <hr>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.0667521408513!2d139.74032531525808!3d35.65072698020143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bb301f54a89%3A0x255f3e4c95e93ef1!2z6aeQ5pel44Kk44K_44Oq44Ki5aSn5L2_6aSo!5e0!3m2!1sja!2sjp!4v1603627203993!5m2!1sja!2sjp"
+          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+      <div class="reservation right-page part">
+        <div class="form-wrap">
+          <form action="index.html" method="post">
+            <h2>Reservation</h2>
+            <table>
+              <tr>
+                <td>お名前<span>必須</span></td>
+                <td><input type="text" placeholder="お名前" name="" value=""></td>
+              </tr>
+              <tr>
+                <td>Eメール<span>必須</span></td>
+                <td><input type="email" placeholder="E-mail" name="" value=""></td>
+              </tr>
+              <tr>
+                <td>電話番号<span>必須</span></td>
+                <td><input type="tel" placeholder="電話番号" name="" value=""></td>
+              </tr>
+              <tr>
+                <td>ご予約日時<span>必須</span></td>
+                <td><input type="date" placeholder="" name="" value=""></td>
+              </tr>
+              <tr>
+                <td>ご予約人数<span>必須</span></td>
+                <td><input type="text" placeholder="" name="人数" value=""></td>
+              </tr>
+              <tr>
+                <td>内お子様の人数<span>必須</span></td>
+                <td><input type="text" placeholder="" name="お子様" value=""></td>
+              </tr>
+              <tr>
+                <td>ご要望<br><small>※アレルギー等の<br>記入をお願いします。</small></td>
+                <td><textarea name="name" placeholder='ご要望' rows="4" cols=""></textarea></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <button type="submit" name="button">送信</button>
+                  <button type="reset" name="button">修正</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="./js/base.js"></script>
+</body>
+
+</html>

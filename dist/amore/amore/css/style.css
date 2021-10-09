@@ -1,0 +1,368 @@
+/* base set */
+html {
+  font-size: 0.78125vw;
+  visibility: hidden;
+}
+
+html.wf-active, html.loading-delay {
+  visibility: visible;
+}
+
+html body {
+  color: #000;
+  font-family: ryo-text-plusn, serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 200;
+  position: relative;
+}
+
+html ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html .part {
+  display: none;
+}
+
+html main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html .active {
+  display: block;
+}
+
+.logos {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  position: absolute;
+  z-index: 100;
+}
+
+.logos i {
+  padding: 10px;
+}
+
+.logos .fa-bars:hover {
+  -webkit-transition: all 300ms;
+  color: #999;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.modal {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 110;
+}
+
+.modal menu {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3rem;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 50vw;
+}
+
+.modal menu li:hover,
+.modal menu .icon:hover {
+  -webkit-transition: all 300ms;
+  color: #999;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.modal menu .icon {
+  font-size: 150%;
+  left: 0%;
+  padding: 2rem;
+  position: absolute;
+  top: 0%;
+}
+
+.left-veiw .home {
+  background: url(../img/home.jpg) no-repeat center/cover;
+}
+
+.left-veiw .menu {
+  background: url(../img/menu.jpg) no-repeat center/cover;
+}
+
+.left-veiw .event {
+  background: url(../img/event.jpg) no-repeat center/cover;
+}
+
+.left-veiw .access {
+  background: url(../img/access.jpg) no-repeat center/cover;
+}
+
+.left-veiw .reservation {
+  background: url(../img/reservation.jpg) no-repeat center/cover;
+}
+
+.left-veiw .reservation {
+  background-position: top;
+}
+
+.left-veiw div {
+  height: 100vh;
+  width: 50vw;
+}
+
+.right-veiw .home {
+  padding: 5rem;
+}
+
+.right-veiw .home .center {
+  -webkit-transform: translate(-50%, -50%);
+  left: 50%;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.right-veiw .home p {
+  font-size: 1.4rem;
+  letter-spacing: 0.5rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.right-veiw .menu {
+  line-height: 4rem;
+  overflow: scroll;
+  padding: 3rem 4rem;
+}
+
+.right-veiw .event {
+  overflow: scroll;
+  padding: 3rem 4rem;
+}
+
+.right-veiw .event > * {
+  margin: 0 0 10rem;
+}
+
+.right-veiw .event h3 {
+  margin: 0 0 3rem;
+  text-align: center;
+}
+
+.right-veiw .event .inline {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-veiw .event .base {
+  width: 25%;
+}
+
+.right-veiw .event .content {
+  width: 70%;
+}
+
+.right-veiw .access {
+  padding: 3rem 4rem;
+}
+
+.right-veiw .access iframe {
+  width: 100%;
+}
+
+.right-veiw .reservation {
+  position: relative;
+}
+
+.right-veiw .reservation .form-wrap {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-transform: translate(-50%, -50%);
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.right-veiw .reservation form {
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 5%;
+  color: #fff;
+  padding: 4rem;
+}
+
+.right-veiw .reservation table {
+  border-collapse: separate;
+  border-spacing: 2rem;
+  margin: 0 auto;
+}
+
+.right-veiw .reservation span {
+  background-color: #c8272b;
+  border-radius: 25%;
+  font-size: 75%;
+  margin: 0 0 0 1rem;
+  padding: 0.5rem;
+}
+
+.right-veiw .reservation input {
+  width: 100%;
+}
+
+.right-veiw .reservation button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  width: 45%;
+}
+
+.right-veiw .reservation button[type="submit"] {
+  background-color: #f3b9ea;
+}
+
+@media screen and (max-width: 960px) {
+  html body {
+    font-size: 5rem;
+  }
+  html main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .logos {
+    color: #000;
+    font-size: 5rem;
+    margin: 0 auto;
+    position: relative;
+    width: 90vw;
+  }
+  .logos .fa-bars {
+    left: -4rem;
+    position: relative;
+  }
+  .modal menu {
+    font-size: 10rem;
+    width: 100vw;
+  }
+  .left-veiw div {
+    height: 60rem;
+    width: 100vw;
+  }
+  .right-veiw .home .center {
+    -webkit-transform: translate(-50%, 10%);
+    transform: translate(-50%, 10%);
+  }
+  .right-veiw .home p {
+    font-size: 4.5rem;
+    line-height: 10rem;
+  }
+  .right-veiw .menu {
+    line-height: 6.5rem;
+  }
+  .right-veiw .event .inline {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .right-veiw .event .base {
+    width: 95%;
+  }
+  .right-veiw .event .content {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logos {
+    width: 95vw;
+  }
+  .right-veiw .home .center {
+    -webkit-transform: translate(-50%, 25%);
+    transform: translate(-50%, 25%);
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .right-veiw .home {
+    height: 100vh;
+    width: 50vw;
+  }
+  .right-veiw .menu {
+    height: 100vh;
+    width: 50vw;
+  }
+  .right-veiw .event {
+    height: 100vh;
+    width: 50vw;
+  }
+  .right-veiw .access {
+    height: 100vh;
+    width: 50vw;
+  }
+  .right-veiw .reservation {
+    height: 100vh;
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 960px) {
+  .right-veiw .home {
+    height: 60rem;
+    width: 100vw;
+  }
+  .right-veiw .menu {
+    height: 60rem;
+    width: 100vw;
+  }
+  .right-veiw .event {
+    height: 60rem;
+    width: 100vw;
+  }
+  .right-veiw .access {
+    height: 60rem;
+    width: 100vw;
+  }
+  .right-veiw .reservation {
+    height: 60rem;
+    width: 100vw;
+  }
+}
