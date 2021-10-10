@@ -1,28 +1,154 @@
-@charset "UTF-8";
-html {
-  font-size: calc(10 / 1920 * 100vw);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Sawarabi+Mincho&display=swap");
+body {
+  color: #666;
 }
 
-html body {
-  color: #000;
-  font-family: "Oriya MN";
-  font-size: 3rem;
-}
-
-html body ul {
+body ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-html body a {
-  color: #000;
+body a {
+  color: initial;
 }
 
-html body h2 {
-  font-size: 10rem;
-  font-weight: 100;
+.s_hero {
+  background: url(../../dist/img/hero.jpg) no-repeat center/contain;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 66.5vw;
+  position: relative;
+}
+
+.s_hero_text {
+  -webkit-transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.s_hero_text_h1 {
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.s_hero_text_h2 {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.nav {
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.nav ul {
+  border-bottom: 1px solid #1d809f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px 20px;
+  margin: 0 40px;
   text-transform: capitalize;
+}
+
+.nav ul li {
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+.s_profile {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.s_profile_svg {
+  position: absolute;
+  width: 30%;
+}
+
+.s_profile_svg:first-child {
+  right: 0;
+  top: 80px;
+}
+
+.s_profile_svg:last-child {
+  bottom: 80px;
+  left: 0;
+}
+
+.s_profile_desc {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  padding: 100px 40px;
+  text-transform: capitalize;
+}
+
+.s_profile_desc_img-wrap img {
+  border-radius: 50%;
+}
+
+.s_profile_desc_list {
+  font-family: "Sawarabi Mincho", sans-serif;
+}
+
+.s_profile_desc_list-item {
+  margin: 16px 0;
+}
+
+.s_profile_link {
+  text-align: center;
+}
+
+.s_profile_link button {
+  -webkit-transition: 0.4s;
+  background: rgba(29, 128, 159, 0.5);
+  border-radius: 25px;
+  color: #fff;
+  display: inline-block;
+  padding: 7px 20px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.s_profile_link button:hover {
+  background: #fff;
+  color: #1d809f;
+}
+
+.s_works {
+  background: rgba(29, 128, 159, 0.05);
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
 }
 
 .spinner-wrap {
@@ -176,1261 +302,35 @@ html body h2 {
   }
 }
 
-.hero {
-  background: url(../img/hero.jpg) no-repeat center/cover;
-  color: #fff;
-  padding-top: 128rem;
-  position: relative;
-  text-transform: capitalize;
-  width: 100%;
-}
-
-.hero .text-box {
-  -webkit-transform: translate(-50%, -50%);
-  left: 50%;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.hero h1 {
-  font: normal normal normal 18rem/22rem Oriya MN;
-  letter-spacing: 0.64rem;
-}
-
-.hero h2 {
-  font: normal normal normal 7rem/8.5rem Oriya MN;
-  letter-spacing: 0.64rem;
-}
-
-.nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 2.5rem 0 0;
-  padding: 5rem 5rem 3.2rem;
-  text-transform: capitalize;
-}
-
-.nav ul li {
-  font: normal normal normal 4rem/5rem Oriya MN;
-  margin: 0 0 0 5rem;
-}
-
-.nav ul .active a {
-  color: #1d809f;
-}
-
-.nav ul a:hover {
-  color: #1d809f;
-}
-
-.nav hr {
-  background-color: #1d809f;
-  border: none;
-  height: 5px;
-  margin: 0 auto;
-  width: 95%;
-}
-
-.my-index {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  margin: 40rem 0 0 0;
-  position: relative;
-  will-change: auto;
-}
-
-.my-index > :not(:nth-child(2)) {
-  margin: 0 0 5rem;
-}
-
-.my-index h2 {
-  -webkit-transform: scale(0.1) rotateX(89deg);
-  -webkit-transition: all 1000ms 0ms ease;
-  font: normal normal normal 10rem/12rem Oriya MN;
-  letter-spacing: 0.64rem;
-  transform: scale(0.1) rotateX(89deg);
-  transition: all 1000ms 0ms ease;
-}
-
-.my-index h2.animated {
-  -webkit-transform: none;
-  transform: none;
-}
-
-.my-index h3 {
-  -webkit-transform: scale(0.1) rotateX(89deg);
-  -webkit-transition: all 1000ms 0ms ease;
-  font: normal normal normal 4.5rem/5.5rem Oriya MN;
-  letter-spacing: 0.64rem;
-  transform: scale(0.1) rotateX(89deg);
-  transition: all 1000ms 0ms ease;
-}
-
-.my-index h3.animated {
-  -webkit-transform: none;
-  transform: none;
-}
-
-.my-index img {
-  -webkit-transition: all 1500ms 0ms ease;
-  border-radius: 50%;
-  opacity: 0;
-  transition: all 1500ms 0ms ease;
-}
-
-.my-index img.animated {
-  opacity: 1;
-}
-
-.my-index ul {
-  -webkit-transform: translateY(10rem);
-  -webkit-transition: all 500ms 0ms ease;
-  font: normal normal normal 3.5rem/6rem Oriya MN;
-  list-style: circle;
-  opacity: 0;
-  transform: translateY(10rem);
-  transition: all 500ms 0ms ease;
-}
-
-.my-index ul.animated {
-  -webkit-transform: none;
-  opacity: 1;
-  transform: none;
-}
-
-.my-index li + li {
-  margin: 1rem 0 0;
-}
-
-.my-index button {
-  -webkit-transform: translateY(5rem);
-  -webkit-transition: all 500ms 0ms ease;
-  background-color: #1d809f;
-  border-radius: 100vh;
-  color: #fff;
-  cursor: pointer;
-  font: normal normal normal 6rem/7rem Oriya MN;
-  height: 10rem;
-  letter-spacing: 0.64rem;
-  opacity: 0;
-  text-decoration: none;
-  text-transform: capitalize;
-  transform: translateY(5rem);
-  transition: all 500ms 0ms ease;
-  width: 50rem;
-}
-
-.my-index button.animated {
-  -webkit-transform: none;
-  opacity: 1;
-  transform: none;
-}
-
-.my-index svg {
-  opacity: 0.75;
-}
-
-.my-index .svg-top {
-  position: absolute;
-  right: 7.5%;
-  top: -20%;
-  width: 30vw;
-}
-
-.my-index .svg-top svg#freepik_stories-developer-activity:not(.animated) .animable {
-  opacity: 0;
-}
-
-.my-index .svg-top svg#freepik_stories-developer-activity.animated
-#freepik--background-complete--inject-41 {
-  -webkit-animation: 2.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
-  -webkit-animation-delay: 0s;
-  animation: 2.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
-  animation-delay: 0s;
-}
-
-.my-index .svg-top svg#freepik_stories-developer-activity.animated #freepik--Plant--inject-41 {
-  -webkit-animation: 1.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
-  -webkit-animation-delay: 0s;
-  animation: 1.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
-  animation-delay: 0s;
-}
-
-.my-index .svg-top svg#freepik_stories-developer-activity.animated
-#freepik--binary-numbers--inject-41 {
-  -webkit-animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
-  -webkit-animation-delay: 0s;
-  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
-  animation-delay: 0s;
-}
-
-.my-index .svg-top svg#freepik_stories-developer-activity.animated
-#freepik--speech-bubble--inject-41 {
-  -webkit-animation: 1.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
-  -webkit-animation-delay: 0.5s;
-  animation: 1.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
-  animation-delay: 0.5s;
-  opacity: 0;
-}
-
-.my-index .svg-top svg#freepik_stories-developer-activity.animated
-#freepik--Screens--inject-41 {
-  -webkit-animation: 1.8s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
-  -webkit-animation-delay: 0s;
-  animation: 1.8s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
-  animation-delay: 0s;
-}
-
-.my-index .svg-top svg#freepik_stories-developer-activity.animated
-#freepik--Device--inject-41 {
-  -webkit-animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
-  -webkit-animation-delay: 0s;
-  animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
-  animation-delay: 0s;
-}
-
-.my-index .svg-top svg#freepik_stories-developer-activity.animated
-#freepik--Character--inject-41 {
-  -webkit-animation: 1.6s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
-  -webkit-animation-delay: 0s;
-  animation: 1.6s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
-  animation-delay: 0s;
-}
-
-.my-index .svg-top svg#freepik_stories-developer-activity.animated #freepik--Floor--inject-41 {
-  -webkit-animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
-  -webkit-animation-delay: 0s;
-  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
-  animation-delay: 0s;
-}
-
-@-webkit-keyframes slideLeft {
-  0% {
-    -webkit-transform: translateX(-30px);
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideLeft {
-  0% {
-    -webkit-transform: translateX(-30px);
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@-webkit-keyframes zoomIn {
-  0% {
-    -webkit-transform: scale(0.5);
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes zoomIn {
-  0% {
-    -webkit-transform: scale(0.5);
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@-webkit-keyframes slideUp {
-  0% {
-    -webkit-transform: translateY(30px);
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    -webkit-transform: inherit;
-    opacity: 1;
-    transform: inherit;
-  }
-}
-
-@keyframes slideUp {
-  0% {
-    -webkit-transform: translateY(30px);
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    -webkit-transform: inherit;
-    opacity: 1;
-    transform: inherit;
-  }
-}
-
-@-webkit-keyframes lightSpeedLeft {
-  from {
-    -webkit-transform: translate3d(-50%, 0, 0) skewX(20deg);
-    opacity: 0;
-    transform: translate3d(-50%, 0, 0) skewX(20deg);
-  }
-  60% {
-    -webkit-transform: skewX(-10deg);
-    opacity: 1;
-    transform: skewX(-10deg);
-  }
-  80% {
-    -webkit-transform: skewX(2deg);
-    transform: skewX(2deg);
-  }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes lightSpeedLeft {
-  from {
-    -webkit-transform: translate3d(-50%, 0, 0) skewX(20deg);
-    opacity: 0;
-    transform: translate3d(-50%, 0, 0) skewX(20deg);
-  }
-  60% {
-    -webkit-transform: skewX(-10deg);
-    opacity: 1;
-    transform: skewX(-10deg);
-  }
-  80% {
-    -webkit-transform: skewX(2deg);
-    transform: skewX(2deg);
-  }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.my-index .svg-bottom {
-  bottom: -20%;
-  left: 5%;
-  position: absolute;
-  width: 30vw;
-}
-
-.my-index .svg-bottom svg#freepik_stories-developer-activity:not(.animated) .animable {
-  opacity: 0;
-}
-
-.my-index .svg-bottom svg#freepik_stories-developer-activity.animated
-#freepik--Plants--inject-171 {
-  -webkit-animation: 2s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
-  -webkit-animation-delay: 0s;
-  animation: 2s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
-  animation-delay: 0s;
-}
-
-.my-index .svg-bottom svg#freepik_stories-developer-activity.animated
-#freepik--Gears--inject-171 {
-  -webkit-animation: 2s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
-  -webkit-animation-delay: 0s;
-  animation: 2s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
-  animation-delay: 0s;
-}
-
-.my-index .svg-bottom svg#freepik_stories-developer-activity.animated
-#freepik--Device--inject-171 {
-  -webkit-animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
-  -webkit-animation-delay: 0s;
-  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
-  animation-delay: 0s;
-}
-
-.my-index .svg-bottom svg#freepik_stories-developer-activity.animated
-#freepik--Window--inject-171 {
-  -webkit-animation: 1s 1 forwards ease-out zoomOut;
-  -webkit-animation-delay: 0.5s;
-  animation: 1s 1 forwards ease-out zoomOut;
-  animation-delay: 0.5s;
-  opacity: 0;
-}
-
-.my-index .svg-bottom svg#freepik_stories-developer-activity.animated
-#freepik--window--inject-171 {
-  -webkit-animation: 1s 1 forwards ease-out zoomOut;
-  -webkit-animation-delay: 0.25s;
-  animation: 1s 1 forwards ease-out zoomOut;
-  animation-delay: 0.25s;
-  opacity: 0;
-}
-
-.my-index .svg-bottom svg#freepik_stories-developer-activity.animated
-#freepik--window--inject-171 {
-  -webkit-animation: 1s 1 forwards ease-out zoomOut;
-  -webkit-animation-delay: 0.5s;
-  animation: 1s 1 forwards ease-out zoomOut;
-  animation-delay: 0.5s;
-  opacity: 0;
-}
-
-.my-index .svg-bottom svg#freepik_stories-developer-activity.animated
-#freepik--window--inject-171 {
-  -webkit-animation: 1s 1 forwards ease-out zoomOut;
-  -webkit-animation-delay: 0.75s;
-  animation: 1s 1 forwards ease-out zoomOut;
-  animation-delay: 0.75s;
-  opacity: 0;
-}
-
-.my-index .svg-bottom svg#freepik_stories-developer-activity.animated
-#freepik--Windows--inject-171 {
-  -webkit-animation: 1s 1 forwards ease-out zoomOut;
-  -webkit-animation-delay: 0.5s;
-  animation: 1s 1 forwards ease-out zoomOut;
-  animation-delay: 0.5s;
-  opacity: 0;
-}
-
-.my-index .svg-bottom svg#freepik_stories-developer-activity.animated
-#freepik--Character--inject-171 {
-  -webkit-animation: 1.6s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
-  -webkit-animation-delay: 0s;
-  animation: 1.6s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
-  animation-delay: 0s;
-}
-
-@keyframes slideUp {
-  0% {
-    -webkit-transform: translateY(30px);
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    -webkit-transform: inherit;
-    opacity: 1;
-    transform: inherit;
-  }
-}
-
-@keyframes slideLeft {
-  0% {
-    -webkit-transform: translateX(-30px);
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@-webkit-keyframes zoomOut {
-  0% {
-    -webkit-transform: scale(1.5);
-    opacity: 0;
-    transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes zoomOut {
-  0% {
-    -webkit-transform: scale(1.5);
-    opacity: 0;
-    transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@-webkit-keyframes slideRight {
-  0% {
-    -webkit-transform: translateX(30px);
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideRight {
-  0% {
-    -webkit-transform: translateX(30px);
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.works {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  margin: 40rem 0 20rem 0;
-  position: relative;
-  will-change: auto;
-}
-
-.works h2 {
-  -webkit-transform: scale(0.1) rotateX(89deg);
-  -webkit-transition: all 1000ms 0ms ease;
-  font: normal normal normal 10rem/12rem Oriya MN;
-  letter-spacing: 0.64rem;
-  transform: scale(0.1) rotateX(89deg);
-  transition: all 1000ms 0ms ease;
-}
-
-.works h2.animated {
-  -webkit-transform: none;
-  transform: none;
-}
-
-.works article {
-  -webkit-transform: translateX(-100%);
-  -webkit-transition: opacity 3000ms 0ms ease, -webkit-transform 1000ms 0ms ease;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 3000ms 0ms ease, -webkit-transform 1000ms 0ms ease;
-  transition: transform 1000ms 0ms ease, opacity 3000ms 0ms ease;
-  transition: transform 1000ms 0ms ease, opacity 3000ms 0ms ease, -webkit-transform 1000ms 0ms ease;
-}
-
-.works article.animated {
-  -webkit-transform: none;
-  opacity: 1;
-  transform: none;
-}
-
-.works article + article {
-  margin: 7.5rem 0 0;
-}
-
-.works a {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-transition: all 300ms 0ms ease;
-  align-items: center;
-  background-color: #ddd;
-  border: 1px solid #ddd;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  transition: all 300ms 0ms ease;
-}
-
-.works :nth-child(2n + 1) a {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-
-.works .textbox {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 70rem;
-}
-
-.works .textbox h3 {
-  font: normal normal normal 4rem/5rem Oriya MN;
-  font-weight: 100;
-}
-
-.works .textbox .caption {
-  font: normal normal normal 3rem/3.6rem Oriya MN;
-  opacity: 0.6;
-}
-
-.works .img-wrap {
-  width: 100rem;
-}
-
-footer {
-  color: #fff;
-  margin: 5rem;
-}
-
-footer .footer-bottom {
-  background-color: #1d809f;
-  padding: 3rem 0;
-  position: relative;
-  text-align: center;
-}
-
-footer .footer-bottom a {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 75%;
-  position: absolute;
-  right: 0;
-}
-
-.about {
-  margin: 10rem 0 0 0;
-  padding: 0 15rem;
-  will-change: auto;
-}
-
-.about h2 {
-  -webkit-transform: scale(0.1);
-  -webkit-transition: all 1000ms 0ms ease;
-  font: normal normal normal 10rem/12rem Oriya MN;
-  margin: 0 0 2.5rem;
-  opacity: 0;
-  transform: scale(0.1);
-  transition: all 1000ms 0ms ease;
-}
-
-.about h2.animated {
-  -webkit-transform: none;
-  opacity: 1;
-  transform: none;
-}
-
-.about .container {
-  -ms-flex-pack: distribute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: space-around;
-}
-
-.about figure {
-  -webkit-transform: translate(-100%);
-  -webkit-transition: all 1000ms 500ms ease;
-  opacity: 0;
-  transform: translate(-100%);
-  transition: all 1000ms 500ms ease;
-}
-
-.about figure.animated {
-  -webkit-transform: none;
-  opacity: 1;
-  transform: none;
-}
-
-.about figure .img-wrap {
-  margin: 5rem 0;
-}
-
-.about figure .img-wrap img {
-  border-radius: 50%;
-}
-
-.about figure li {
-  font: normal normal normal 4rem/5rem Oriya MN;
-}
-
-.about figure li + li {
-  margin: 2rem 0 0;
-}
-
-.about article {
-  -webkit-transform: translateY(50%);
-  -webkit-transition: all 1000ms 1000ms ease;
-  opacity: 0;
-  transform: translateY(50%);
-  transition: all 1000ms 1000ms ease;
-  width: 100rem;
-}
-
-.about article.animated {
-  -webkit-transform: none;
-  opacity: 1;
-  transform: none;
-}
-
-.about article .title {
-  font: normal normal normal 4rem/3.6rem Oriya MN;
-  letter-spacing: 0.36rem;
-}
-
-.about article hr {
-  background-color: #1d809f;
-  border: none;
-  height: 3px;
-  margin: 0 auto 2rem;
-}
-
-.about article p {
-  font: normal normal normal 3rem/3.6rem Oriya MN;
-  letter-spacing: 0.32rem;
-}
-
-.about article + article {
-  -webkit-transition: all 1000ms 0ms ease;
-  margin: 5rem auto 0;
-  transition: all 1000ms 0ms ease;
-}
-
-.skill {
-  margin: 10rem 0;
-  padding: 0 15rem;
-  position: relative;
-}
-
-.skill h2 {
-  -webkit-transform: scale(0.1);
-  -webkit-transition: all 1000ms 0ms ease;
-  font: normal normal normal 10rem/12rem Oriya MN;
-  margin: 0 0 2.5rem;
-  opacity: 0;
-  transform: scale(0.1);
-  transition: all 1000ms 0ms ease;
-}
-
-.skill h2.animated {
-  -webkit-transform: none;
-  opacity: 1;
-  transform: none;
-}
-
-.skill .container {
-  -ms-flex-pack: distribute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: space-around;
-}
-
-.skill .container :nth-child(2) {
-  -webkit-transition: all 1000ms 250ms ease;
-  transition: all 1000ms 250ms ease;
-}
-
-.skill .container :nth-child(3) {
-  -webkit-transition: all 1000ms 500ms ease;
-  transition: all 1000ms 500ms ease;
-}
-
-.skill .item {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-transform: translateY(50%);
-  -webkit-transition: all 1000ms 0ms ease;
-  align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  opacity: 0;
-  transform: translateY(50%);
-  transition: all 1000ms 0ms ease;
-}
-
-.skill .item.animated {
-  -webkit-transform: none;
-  opacity: 1;
-  transform: none;
-}
-
-.skill .item .title {
-  background-color: #1d809f;
-  color: #fff;
-  font-size: 4rem;
-  padding: 1rem 15rem;
-  text-align: center;
-  width: 100%;
-}
-
-.skill .item ul {
-  font: normal normal normal 3rem/4rem Oriya MN;
-  list-style: circle;
-  margin: 3rem 0 0;
-}
-
-.skill .item li + li {
-  margin: 1rem 0 0;
-}
-
-.skill::after {
-  bottom: 0;
-  content: "* 現在学習中";
-  font-size: 60%;
-  left: 90%;
-  position: relative;
-}
-
-.work {
-  -webkit-transform: translateY(-10%);
-  -webkit-transition: all 1000ms 0ms ease;
-  font-size: 3.5rem;
-  margin: 0 auto;
-  opacity: 0;
-  padding: 0 0 10rem;
-  transform: translateY(-10%);
-  transition: all 1000ms 0ms ease;
-  width: 120rem;
-}
-
-.work.animated {
-  -webkit-transform: none;
-  opacity: 1;
-  transform: none;
-}
-
-.work .fa-external-link-alt {
-  margin: 0 0 0 2rem;
-}
-
-.work .swiper-container {
-  margin: 10rem 0;
-}
-
-.work h3,
-.work h4 {
-  font: normal normal normal 5rem/6rem Oriya MN;
-}
-
-.work a:hover {
-  color: #1d809f;
-}
-
-.work p {
-  font: normal normal normal 3.6rem/8rem Oriya MN;
-  letter-spacing: 0.16rem;
-  margin: 5rem 0;
-}
-
-.work p a {
-  color: #1d809f;
-}
-
-.work .link {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font: normal normal normal 3rem/5rem Hiragino Kaku Gothic ProN;
-  justify-content: space-between;
-}
-
-.work .link .fas {
-  display: inline-block;
-  font-size: 50%;
-  line-height: 5rem;
-  margin: 0 1rem;
-  vertical-align: middle;
-}
-
-.work .link a.inactive {
-  color: rgba(0, 0, 0, 0);
-  pointer-events: none;
-}
-
 .js-cursor {
   display: none;
 }
 
-@media screen and (max-width: 959px) {
-  html {
-    font-size: calc(10 / 768 * 100vw);
-  }
-  .hero {
-    padding-top: 51.2rem;
-  }
-  .hero h1 {
-    font: normal normal normal 9rem/10rem Oriya MN;
-  }
-  .hero h2 {
-    font: normal normal normal 3.6rem/4.4rem Oriya MN;
-  }
-  .nav ul {
-    margin: 0;
-    padding: 2.5rem 2.5rem 1.6rem;
-  }
-  .nav ul li {
-    font: normal normal normal 2rem/2.5rem Oriya MN;
-  }
-  .my-index {
-    margin: 25rem 0 0 0;
-  }
-  .my-index h2 {
-    font: normal normal normal 6.4rem/6.4rem Oriya MN;
-    letter-spacing: 0.32rem;
-  }
-  .my-index h3 {
-    font: normal normal normal 3.2rem/3.2rem Oriya MN;
-    letter-spacing: 0.32rem;
-  }
-  .my-index ul {
-    font: normal normal normal 2.6rem/3rem Oriya MN;
-  }
-  .my-index button {
-    font: normal normal normal 4.8rem/6rem Oriya MN;
-    width: 28rem;
-  }
-  .my-index .svg-top {
-    top: -25%;
-  }
-  .works {
-    margin: 25rem 0 0 0;
-  }
-  .works h2 {
-    font: normal normal normal 6.4rem/10rem Oriya MN;
-  }
-  .works .textbox {
-    width: 28rem;
-  }
-  .works .textbox h3 {
-    font: normal normal normal 2.5rem/3rem Oriya MN;
-    letter-spacing: -0.16rem;
-  }
-  .works .textbox .caption {
-    font: normal normal normal 1.6rem/2rem Oriya MN;
-  }
-  .works .img-wrap {
-    width: 40rem;
-  }
-  footer .footer-bottom {
-    font: normal normal normal 1rem/2rem Hiragino Kaku Gothic ProN;
-  }
-  .about {
-    margin: 7.5rem 0 0 0;
-    padding: 0 5rem;
-  }
-  .about h2 {
-    font: normal normal normal 6.4rem/7.8rem Oriya MN;
-  }
-  .about .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .about figure {
-    -ms-flex-pack: distribute;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: space-around;
-    margin: 0 0 10rem;
-  }
-  .about figure li {
-    font: normal normal normal 2.4rem/3rem Oriya MN;
-  }
-  .about article {
-    margin: 0 auto;
-    width: 55rem;
-  }
-  .about article .title {
-    font: normal normal normal 2.4rem/3.2rem Oriya MN;
-  }
-  .about article p {
-    font: normal normal normal 1.6rem/3.2rem Oriya MN;
-  }
-  .skill {
-    margin: 7.5rem 0 10rem;
-    padding: 0 5rem;
-  }
-  .skill h2 {
-    font: normal normal normal 6.4rem/7.8rem Oriya MN;
-  }
-  .skill .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .skill .item {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-  .skill .item + .item {
-    margin: 7.5rem 0 0;
-  }
-  .skill .item .title {
-    font: normal normal normal 4rem/5rem Oriya MN;
-    width: 55rem;
-  }
-  .skill .item ul {
-    margin: 3rem auto 0 10rem;
-  }
-  .skill::after {
-    left: 75%;
-  }
-  .work {
-    padding: 0 5rem;
-    width: auto;
-  }
-  .work .swiper-container {
-    margin: 5rem 0;
-  }
-  .work h3,
-  .work h4 {
-    font: normal normal normal 2.4rem/3rem Oriya MN;
-  }
-  .work p {
-    font: normal normal normal 1.6rem/3.2rem Oriya MN;
-    letter-spacing: 0.32rem;
-    margin: 3rem 0;
-  }
-  .work p br {
-    display: none;
-  }
-  .work .link {
-    font: normal normal normal 2rem/3.4rem Hiragino Kaku Gothic ProN;
+@media screen and (min-width: 1200px) {
+  .s_hero {
+    padding-top: 800px;
   }
 }
 
-@media screen and (max-width: 559px) {
-  html {
-    font-size: calc(10 / 375 * 100vw);
-  }
-  .hero {
-    padding-top: 25rem;
-  }
-  .hero h1 {
-    font: normal normal normal 6.4rem/7.2rem Oriya MN;
-    letter-spacing: 0px;
-  }
-  .hero h2 {
-    font: normal normal normal 2.4rem/3rem Oriya MN;
-    letter-spacing: 0px;
-  }
-  .nav ul {
-    margin: 0;
-    padding: 1rem 2.5rem 0.6rem;
-  }
-  .nav ul li {
-    margin: 0 0 0 1.5rem;
-  }
-  .my-index {
-    margin: 5rem 0 0 0;
-  }
-  .my-index > :not(:nth-child(2)) {
-    margin: 0 0 2.5rem;
-  }
-  .my-index h2 {
-    font: normal normal normal 3.2rem/2.4rem Oriya MN;
-  }
-  .my-index h3 {
-    font: normal normal normal 1.6rem/1.2rem Oriya MN;
-    letter-spacing: 0.16rem;
-  }
-  .my-index img {
-    width: 16rem;
-  }
-  .my-index ul {
-    display: none;
-  }
-  .my-index button {
-    font: normal normal normal 1.8rem/2.2rem Oriya MN;
-    height: 4.5rem;
-    letter-spacing: 0;
-    width: 10rem;
-  }
-  .my-index .svg-top {
-    top: 65%;
-  }
-  .my-index .svg-bottom {
-    bottom: -10%;
-  }
-  .works {
-    margin: 5rem 0 0 0;
-  }
-  .works h2 {
-    font: normal normal normal 3.2rem/4rem Oriya MN;
-  }
-  .works article + article {
-    margin: 2rem 0 0;
-  }
-  .works a {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    background-color: initial;
-    border: none;
-    flex-direction: column;
-  }
-  .works :nth-child(2n + 1) a {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .works .textbox h3 {
-    font: normal normal normal 1.8rem/3rem Oriya MN;
-    letter-spacing: 0px;
-    margin: 2.5rem 0;
-  }
-  .works .textbox .caption {
-    display: none;
-  }
-  .works .img-wrap {
-    -webkit-box-shadow: 10px 10px 1px #00000029;
-    border: 1px solid #707070;
-    box-shadow: 10px 10px 1px #00000029;
-    height: 42rem;
-    overflow: hidden;
-    width: 32rem;
-  }
-  footer .footer-bottom a {
-    display: block;
-    position: relative;
-  }
-  .about {
-    margin: 5rem 0 0 0;
-    padding: 0 3.6rem;
-  }
-  .about h2 {
-    font: normal normal normal 3.2rem/3.6rem Oriya MN;
-  }
-  .about .container {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  .about figure {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin: 0 0 7.5rem;
-    width: 22.5rem;
-  }
-  .about figure .img-wrap {
-    margin: 2.5rem 0;
-  }
-  .about figure li {
-    font: normal normal normal 1.8rem/2.2rem Oriya MN;
-    letter-spacing: 0.16rem;
-  }
-  .about figure li + li {
-    margin: 1rem 0 0;
-  }
-  .about article {
-    width: auto;
-  }
-  .about article .title {
-    font: normal normal normal 2rem/2.5rem Oriya MN;
-    letter-spacing: 0.16rem;
-  }
-  .about article p {
-    font: normal normal normal 1.6rem/2rem Oriya MN;
-    letter-spacing: 0.16rem;
-  }
-  .skill h2 {
-    font: normal normal normal 3.2rem/4rem Oriya MN;
-  }
-  .skill .item .title {
-    font: normal normal normal 2.4rem/3rem Oriya MN;
-    padding: 1rem 0;
-    width: 30rem;
-  }
-  .skill .item ul {
-    font: normal normal normal 2rem/2.5rem Oriya MN;
-    margin: 3rem auto 0 7rem;
-  }
-  .work {
-    padding: 0 3rem;
-  }
-  .work .swiper-container {
-    margin: 3rem 0;
-  }
-  .work h3,
-  .work h4 {
-    font: normal normal normal 1.8rem/2rem Oriya MN;
-  }
-  .work p {
-    letter-spacing: 0.16rem;
-  }
-  .work .link {
-    font: normal normal normal 1.6rem/3rem Hiragino Kaku Gothic ProN;
+@media screen and (min-width: 1024px) {
+  .s_profile {
+    padding: 80px 0;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .my-index ul {
-    font-size: 4rem;
+@media screenm and (min-width: 768px) and (max-width: 1024px) {
+  .s_profile {
+    padding: 80px 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .s_profile {
+    padding: 40px 20px;
   }
 }
 
 @media screen and (min-width: 960px) {
-  .my-index button:hover {
-    -webkit-transform: translateY(-1rem);
-    -webkit-box-shadow: 10px 10px 1px #00000029;
-    background-color: #fff;
-    border: 1px solid #1d809f;
-    box-shadow: 10px 10px 1px #00000029;
-    color: #1d809f;
-    transform: translateY(-1rem);
-  }
-  .works a:hover {
-    -webkit-transform: translateY(-1rem);
-    -webkit-box-shadow: 10px 10px 1px #00000029;
-    box-shadow: 10px 10px 1px #00000029;
-    transform: translateY(-1rem);
-  }
   .js-cursor {
     display: block;
   }
@@ -1476,12 +376,5 @@ footer .footer-bottom a {
   }
   .is-hover .js-cursor__option {
     background: #00ffff;
-  }
-}
-
-@media screen and (min-width: 781px) {
-  .works a:hover {
-    background-color: rgba(29, 128, 159, 0.8);
-    color: #fff;
   }
 }
