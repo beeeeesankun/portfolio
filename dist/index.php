@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio</title>
   <script src="https://kit.fontawesome.com/1af2190f68.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
   <link rel="stylesheet" href="./css/reset.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="./css/style.css">
+  <title>portfolio</title>
 </head>
 
 <body>
@@ -1145,16 +1145,16 @@
       </defs>
       <a href="https://storyset.com/work">Illustration by Freepik Storyset</a>
     </svg>
-    <div class="s_profile_desc">
-      <h2 class="s_profile_desc_h2 anime">hello world.</h2>
-      <h3 class="s_profile_desc_h3 anime">My name is Akihiro Fukabe.</h3>
-      <div class='s_profile_desc_img-wrap'><img class="anime" src='./img/icon.jpg' loading="lazy" alt=''></div>
-      <ul class="s_profile_desc_list anime">
+    <div class="s_profile_desc anime">
+      <h2 class="s_profile_desc_h2">hello world.</h2>
+      <h3 class="s_profile_desc_h3">My name is Akihiro Fukabe.</h3>
+      <div class='s_profile_desc_img-wrap'><img src='./img/icon.jpg' loading="lazy" alt=''></div>
+      <ul class="s_profile_desc_list">
         <li class="s_profile_desc_list-item">名前：深辺　明寛</li>
         <li class="s_profile_desc_list-item">出身：静岡県（神奈川県在中）</li>
         <li class="s_profile_desc_list-item">趣味：水泳、釣り、DIY</li>
       </ul>
-      <a class="s_profile_link" href="./profile/"><button class="anime">profile</button></a>
+      <a class="s_profile_link" href="./profile/"><button>profile</button></a>
     </div>
     <svg class="s_profile_svg anime" id="freepik_stories-developer-activity" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
       <g id="freepik--Floor--inject-171" class="animable" style="transform-origin: 250px 345.35px;">
@@ -2923,57 +2923,61 @@
     </svg>
   </section>
   <section id="works" class="s_works">
-    <h2 class="s_works_h2 anime">works</h2>
-    <article class="s_works_article amore anime">
-      <a href="./amore/">
-        <div class="s_works_article_text">
-          <h3 class="s_works_article_text_h2">LPサイト（レストラン）</h3>
-          <p class="s_works_article_text_caption">[Design,HTML5,CSS3(Sass),<br>JavaScript(native)]</p>
-        </div>
-        <picture class='s_works_article_img-wrap'>
-          <source srcset="./img/amore/amore-sp.jpg" media="(max-width:559px)" />
-          <img src='./img/amore/amore1.jpg' loading="lazy" alt=''>
-        </picture>
-      </a>
-    </article>
-    <article class="s_works_article igarashi-education anime">
-      <a href="./igarashi-education">
-        <div class="s_works_article_text">
-          <h3 class="s_works_article_text_h2">企業サイト（教育）</h3>
-          <p class="s_works_article_text_caption">[HTML5,CSS3(Sass),<br>jQuery]</p>
-        </div>
-        <picture class='s_works_article_img-wrap'>
-          <source srcset="./img/igarashi-education/igarashi-education1.jpg" media="(max-width:559px)" />
-          <img src='./img/igarashi-education/igarashi-education2.jpg' loading="lazy" alt=''>
-        </picture>
-      </a>
-    </article>
-    <article class="s_works_article imaginary anime">
-      <a href="./imaginary-online/">
-        <div class="s_works_article_text">
-          <h3 class="s_works_article_text_h2">ECサイト（アパレル）</h3>
-          <p class="s_works_article_text_caption">[HTML5,CSS3(Sass),<br>JavaScript(native)]</p>
-        </div>
-        <picture class='s_works_article_img-wrap'>
-          <source srcset="./img/imaginary-online/imaginary-online-sp.jpg" media="(max-width:559px)" />
-          <img src='./img/imaginary-online/imaginary1.jpg' loading="lazy" alt=''>
-        </picture>
-      </a>
-    </article>
-    <article class="s_works_article kakigokoro anime">
-      <a href="./kakigokoro/">
-        <div class="s_works_article_text">
-          <h3 class="s_works_article_text_h2">書道家　ホームページ</h3>
-          <p class="s_works_article_text_caption">[Planning, Design,HTML5,<br>CSS3(Sass),jQuery,PHP]</p>
-        </div>
-        <picture class='s_works_article_img-wrap'>
-          <source srcset="./img/kakigokoro/kakigokoro-sp.jpg" media="(max-width:559px)" />
-          <img src='./img/kakigokoro/kakigokoro1.jpg' loading="lazy" alt=''>
-        </picture>
-      </a>
-    </article>
+    <div class="inner">
+      <h2 class="s_works_h2">works</h2>
+      <div class="wrap">
+        <article class="s_works_article amore anime">
+          <a href="./amore/">
+            <div class="s_works_article_text">
+              <h3 class="s_works_article_text_h2">LPサイト（レストラン）</h3>
+              <p class="s_works_article_text_caption">[Design,HTML5,<br>CSS3(Sass),JavaScript(native)]</p>
+            </div>
+            <picture class='s_works_article_img-wrap'>
+              <source srcset="./img/amore/amore-sp.jpg" media="(max-width:559px)" />
+              <img src='./img/amore/amore1.jpg' loading="lazy" alt=''>
+            </picture>
+          </a>
+        </article>
+        <article class="s_works_article igarashi-education anime">
+          <a href="./igarashi-education">
+            <div class="s_works_article_text">
+              <h3 class="s_works_article_text_h2">企業サイト（教育）</h3>
+              <p class="s_works_article_text_caption">[HTML5,CSS3(Sass),<br>jQuery]</p>
+            </div>
+            <picture class='s_works_article_img-wrap'>
+              <source srcset="./img/igarashi-education/igarashi-education1.jpg" media="(max-width:559px)" />
+              <img src='./img/igarashi-education/igarashi-education2.jpg' loading="lazy" alt=''>
+            </picture>
+          </a>
+        </article>
+        <article class="s_works_article imaginary anime">
+          <a href="./imaginary-online/">
+            <div class="s_works_article_text">
+              <h3 class="s_works_article_text_h2">ECサイト（アパレル）</h3>
+              <p class="s_works_article_text_caption">[HTML5,CSS3(Sass),JavaScript(native)]</p>
+            </div>
+            <picture class='s_works_article_img-wrap'>
+              <source srcset="./img/imaginary-online/imaginary-online-sp.jpg" media="(max-width:559px)" />
+              <img src='./img/imaginary-online/imaginary1.jpg' loading="lazy" alt=''>
+            </picture>
+          </a>
+        </article>
+        <article class="s_works_article kakigokoro anime">
+          <a href="./kakigokoro/">
+            <div class="s_works_article_text">
+              <h3 class="s_works_article_text_h2">書道家　ホームページ</h3>
+              <p class="s_works_article_text_caption">[Planning,Design,HTML5,<br>CSS3(Sass),jQuery,PHP]</p>
+            </div>
+            <picture class='s_works_article_img-wrap'>
+              <source srcset="./img/kakigokoro/kakigokoro-sp.jpg" media="(max-width:559px)" />
+              <img src='./img/kakigokoro/kakigokoro1.jpg' loading="lazy" alt=''>
+            </picture>
+          </a>
+        </article>
+      </div>
+    </div>
   </section>
-  <footer class="anime">
+  <footer class="footer">
     <small>
       Copyright &copy; fukabeakihiro.com All Rights Reserved
     </small>
