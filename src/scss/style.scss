@@ -174,13 +174,16 @@ body {
     margin: 20px;
     position: relative;
     width: calc(50% - 40px);
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
       &:nth-child(odd) {
         @include animation(0, 200px, 800ms);
       }
       &:nth-child(even) {
         @include animation(0, 200px, 1600ms);
       }
+    }
+    @media screen and (max-width: 767px) {
+      @include animation(0, 200px, 1000ms);
     }
     &_text {
       position: absolute;

@@ -2,14 +2,8 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <?php require '../dist/components/head.php'; ?>
   <title>profile</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/1af2190f68.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -24,7 +18,7 @@
     <h2 class="anime-load">about</h2>
     <div class="container">
       <figure class="anime-load">
-        <div class='img-wrap'><img src='../img/icon.jpg' alt=''></div>
+        <div class='img-wrap'><img src='./img/icon.jpg' alt=''></div>
         <figcaption>
           <ul>
             <li>名前：深辺　明寛</li>
