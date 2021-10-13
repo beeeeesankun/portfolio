@@ -5,7 +5,7 @@ $font-en: "Montserrat", sans-serif;
 $font-ja: "Sawarabi Mincho", sans-serif;
 
 @mixin common_s {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   position: relative;
 }
@@ -62,8 +62,8 @@ body {
   @include common_s;
   background: url(../../dist/img/hero.jpg) no-repeat center/contain;
   padding-top: 66.5vw;
-  @media screen and (min-width: 1200px) {
-    padding-top: 800px;
+  @media screen and (min-width: 1440px) {
+    padding-top: 960px;
   }
   &_text {
     position: absolute;
@@ -351,5 +351,35 @@ body {
         background: #00ffff;
       }
     }
+  }
+}
+.work-page {
+  @include Padding;
+  font-family: $font-ja;
+  .work {
+    margin: 0px auto;
+    max-width: 880px;
+  }
+  .swiper-container {
+    margin: 40px auto;
+    overflow: hidden;
+  }
+  h3 {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  h4 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: $font-en;
+  }
+  p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: 20px 0;
+  }
+  .link {
+    display: flex;
+    justify-content: space-between;
   }
 }

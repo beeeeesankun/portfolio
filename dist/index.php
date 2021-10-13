@@ -2972,12 +2972,7 @@
       </div>
     </div>
   </section>
-  <footer class="footer">
-    <small>
-      Copyright &copy; fukabeakihiro.com All Rights Reserved
-    </small>
-    <a href="https://storyset.com/work" target="_blank" rel="noopener">Illustration by Freepik Storyset</a>
-  </footer>
+  <?php require_once('./components/footer.php') ?>
   <script src="./js/base.js"></script>
 </body>
 
