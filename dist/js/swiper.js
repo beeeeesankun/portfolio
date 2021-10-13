@@ -17,5 +17,4 @@ var Swiper = new Swiper(".swiper-container", {
     el: ".swiper-scrollbar",
   },
   effect: "coverflow",
-  // coverflow・flip cube
 });

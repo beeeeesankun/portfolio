@@ -12,7 +12,6 @@
       <li><a href="../index.html">top</a></li>
       <li class="active"><a href="">profile</a></li>
     </ul>
-    <hr>
   </div>
   <section class="about">
     <h2 class="anime-load">about</h2>
