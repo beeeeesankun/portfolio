@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Sawarabi+Mincho&display=swap");
 body {
   color: #666;
@@ -238,7 +239,7 @@ body a {
   background: rgba(102, 102, 102, 0.3);
   content: "";
   display: block;
-  padding-top: 29.2vw;
+  padding-top: 29.5vw;
   position: absolute;
   transition: all 300ms ease;
   width: 100%;
@@ -456,9 +457,148 @@ body a {
   justify-content: space-between;
 }
 
+.profile-page {
+  font-family: "Sawarabi Mincho", sans-serif;
+}
+
+.profile-page .s_about {
+  font-family: "Montserrat", sans-serif;
+  margin: 40px auto;
+  max-width: 880px;
+  text-transform: capitalize;
+}
+
+.profile-page .s_about_h2 {
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+.profile-page .s_about_h3 {
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.profile-page .s_about_container {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-page .s_about_container_fig {
+  width: 35%;
+}
+
+.profile-page .s_about_container_fig.anime {
+  -webkit-transition: all 500ms ease;
+  -webkit-transform: translate(0, -200px);
+  opacity: 0;
+  transform: translate(0, -200px);
+  transition: all 500ms ease;
+}
+
+.profile-page .s_about_container_fig.animated {
+  -webkit-transform: translate(0, 0);
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.profile-page .s_about_container_fig img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile-page .s_about_container_fig_caption {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+
+.profile-page .s_about_container_fig_caption li {
+  padding: 16px 0 0;
+}
+
+.profile-page .s_about_container_article.anime {
+  -webkit-transition: all 500ms ease;
+  -webkit-transform: translate(50px, 100px);
+  opacity: 0;
+  transform: translate(50px, 100px);
+  transition: all 500ms ease;
+}
+
+.profile-page .s_about_container_article.animated {
+  -webkit-transform: translate(0, 0);
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.profile-page .s_about_container_article-wrap {
+  margin: 0 0 0 5%;
+  width: 60%;
+}
+
+.profile-page .s_about_container_article_title {
+  border-bottom: 1px solid #1d809f;
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+.profile-page .s_skill {
+  font-family: "Montserrat", sans-serif;
+  margin: 40px auto;
+  max-width: 880px;
+  text-transform: capitalize;
+}
+
+.profile-page .s_skill_h2 {
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+.profile-page .s_skill_h3 {
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.profile-page .s_skill_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 80px;
+}
+
+.profile-page .s_skill_container_item {
+  margin: 0 20px;
+  width: calc(100% / 3 - 40px);
+}
+
+.profile-page .s_skill_container_item_title {
+  font-size: 20px;
+}
+
+.profile-page .s_skill_container_item li {
+  margin: 10px 0 16px 10px;
+}
+
+.profile-page .s_skill::after {
+  content: "*は現在学習中";
+  display: block;
+  text-align: right;
+}
+
 @media screen and (min-width: 1440px) {
   .s_hero {
     padding-top: 960px;
+  }
+  .s_works_article_img-wrap::before {
+    padding-top: 425px;
   }
 }
 
@@ -470,6 +610,9 @@ body a {
     padding: 80px 0;
   }
   .work-page {
+    padding: 80px 0;
+  }
+  .profile-page {
     padding: 80px 0;
   }
 }
@@ -485,6 +628,9 @@ body a {
     padding-top: 25.6vw;
   }
   .work-page {
+    padding: 80px 40px;
+  }
+  .profile-page {
     padding: 80px 40px;
   }
 }
@@ -510,6 +656,21 @@ body a {
   }
   .work-page {
     padding: 40px 20px;
+  }
+  .profile-page {
+    padding: 40px 20px;
+  }
+  .profile-page .s_skill_container_item.anime {
+    -webkit-transition: all 500ms ease;
+    -webkit-transform: translate(50px, 100px);
+    opacity: 0;
+    transform: translate(50px, 100px);
+    transition: all 500ms ease;
+  }
+  .profile-page .s_skill_container_item.animated {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }
 
@@ -538,11 +699,41 @@ body a {
     opacity: 1;
     transform: translate(0, 0);
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .s_works_article_img-wrap::before {
-    padding-top: 350px;
+  .profile-page .s_skill_container_item:first-child.anime {
+    -webkit-transition: all 600ms ease;
+    -webkit-transform: translate(0px, 200px);
+    opacity: 0;
+    transform: translate(0px, 200px);
+    transition: all 600ms ease;
+  }
+  .profile-page .s_skill_container_item:first-child.animated {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  .profile-page .s_skill_container_item:nth-child(2).anime {
+    -webkit-transition: all 1200ms ease;
+    -webkit-transform: translate(0px, 200px);
+    opacity: 0;
+    transform: translate(0px, 200px);
+    transition: all 1200ms ease;
+  }
+  .profile-page .s_skill_container_item:nth-child(2).animated {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  .profile-page .s_skill_container_item:last-child.anime {
+    -webkit-transition: all 1500ms ease;
+    -webkit-transform: translate(0px, 200px);
+    opacity: 0;
+    transform: translate(0px, 200px);
+    transition: all 1500ms ease;
+  }
+  .profile-page .s_skill_container_item:last-child.animated {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }
 

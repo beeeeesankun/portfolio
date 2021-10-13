@@ -20,7 +20,7 @@
       <li><a href="#works">works</a></li>
     </ul>
   </div>
-  <section class="s_profile">
+  <section id="profile" class="s_profile">
     <svg class="s_profile_svg anime" id="freepik_stories-developer-activity" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
       <g id="freepik--background-complete--inject-41" class="animable" style="transform-origin: 237.74px 257.485px;">
         <path d="M387.46,84c0-3.6,1.89-5.75,4.51-5.75s4.52,2.15,4.52,5.75-1.91,5.75-4.52,5.75S387.46,87.58,387.46,84Zm7.83,0c0-3-1.35-4.68-3.32-4.68S388.64,81,388.64,84,390,88.66,392,88.66,395.29,87,395.29,84Z" style="fill: rgb(224, 224, 224); transform-origin: 391.975px 84px;" id="eleaxe98wkowm" class="animable">
