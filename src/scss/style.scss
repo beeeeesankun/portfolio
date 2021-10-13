@@ -20,7 +20,6 @@ $font-ja: "Sawarabi Mincho", sans-serif;
     padding: 40px 20px;
   }
 }
-
 @mixin animation($x, $y, $transition) {
   &.anime {
     opacity: 0;
@@ -32,7 +31,6 @@ $font-ja: "Sawarabi Mincho", sans-serif;
     transform: translate(0, 0);
   }
 }
-
 @mixin h-fontSize {
   font-family: $font-en;
   text-transform: capitalize;
@@ -45,7 +43,6 @@ $font-ja: "Sawarabi Mincho", sans-serif;
     letter-spacing: 2px;
   }
 }
-
 body {
   color: $txtColor;
   ul {
@@ -57,7 +54,6 @@ body {
     color: initial;
   }
 }
-
 .s_hero {
   @include common_s;
   background: url(../../dist/img/hero.jpg) no-repeat center/contain;
@@ -86,7 +82,6 @@ body {
     }
   }
 }
-
 .nav {
   @include common_s;
   ul {
@@ -101,7 +96,6 @@ body {
     }
   }
 }
-
 .s_profile {
   @include common_s;
   @include Padding;
@@ -155,7 +149,6 @@ body {
     }
   }
 }
-
 .s_works {
   @include Padding;
   background: rgba($subColor, $alpha: 0.05);
@@ -218,7 +211,6 @@ body {
     }
   }
 }
-
 .footer {
   background: $subColor;
   color: #fff;
@@ -304,7 +296,6 @@ body {
     }
   }
 }
-
 .js-cursor {
   display: none;
   @media screen and (min-width: 960px) {
