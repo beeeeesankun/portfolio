@@ -2969,6 +2969,30 @@
             </picture>
           </a>
         </article>
+        <article class="s_works_article demoEC anime">
+          <a href="./demoEC.php">
+            <div class="s_works_article_text">
+              <h3 class="s_works_article_text_h2">demoECショップ 管理画面</h3>
+              <p class="s_works_article_text_caption">[Design,HTML,CSS,JavaScript,PHP,MYSQL]</p>
+            </div>
+            <picture class='s_works_article_img-wrap'>
+              <source srcset="./img/demoEC/demoEC-sp.jpg" media="(max-width:767px)" />
+              <img src='./img/demoEC/demoEC1.jpg' loading="lazy" alt=''>
+            </picture>
+          </a>
+        </article>
+        <article class="s_works_article kakigokoro anime">
+          <a href="./kakigokoro.php">
+            <div class="s_works_article_text">
+              <h3 class="s_works_article_text_h2">ONLINESHOP ver(Vue.js)</h3>
+              <p class="s_works_article_text_caption">[Design / Vue.js(VueX)]</p>
+            </div>
+            <picture class='s_works_article_img-wrap'>
+              <source srcset="./img/vue_shop/vue_shop-sp.jpg" media="(max-width:767px)" />
+              <img src='./img/vue_shop/vue_shop1.jpg' loading="lazy" alt=''>
+            </picture>
+          </a>
+        </article>
       </div>
     </div>
   </section>
