@@ -49,7 +49,7 @@ $p = '本制作物は書道家『書き心』春流・破留のHPのリニュー
       </p>
       <div class="link">
         <a href="./imaginary-online.php"><i class="fas fa-angle-double-left"></i>PREV</a>
-        <a href="./index.php#works">TOP<i class="fas fa-angle-double-right"></i></a>
+        <a href="./demoEC.php">NEXT<i class="fas fa-angle-double-right"></i></a>
       </div>
     </div>
   </div>

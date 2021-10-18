@@ -11,10 +11,10 @@ $font-ja: "Sawarabi Mincho", sans-serif;
 }
 @mixin Padding {
   @media screen and (min-width: 1024px) {
-    padding: 8rem 0;
+    padding: 2rem 0;
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    padding: 8rem 4rem;
+    padding: 2rem 1.5rem;
   }
   @media screen and (max-width: 767px) {
     padding: 4rem 2rem;
@@ -51,6 +51,7 @@ $font-ja: "Sawarabi Mincho", sans-serif;
     }
   }
 }
+
 body {
   color: $txtColor;
   ul {
@@ -82,9 +83,6 @@ body {
   @include common_s;
   background: url(../img/hero.jpg) no-repeat center/contain;
   padding-top: 66.5vw;
-  @media screen and (min-width: 1440px) {
-    padding-top: 96rem;
-  }
   &_text {
     position: absolute;
     top: 50%;
@@ -130,7 +128,7 @@ body {
     text-transform: capitalize;
     margin: 0 4rem;
     border-bottom: 1px solid $subColor;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1024px) {
       margin: 0;
       display: flex;
       align-items: center;
@@ -290,12 +288,9 @@ body {
 .footer {
   background: $subColor;
   color: #fff;
-  padding: 3rem 4rem;
+  padding: 1rem 2rem;
   position: relative;
   text-align: center;
-  @media screen and (max-width: 767px) {
-    padding: 1rem 2rem;
-  }
   a {
     position: absolute;
     right: 4rem;
@@ -431,17 +426,20 @@ body {
   }
   .work {
     margin: 0px auto;
-    max-width: 88rem;
+    max-width: 960px;
   }
   .swiper-container {
     margin: 4rem auto;
     overflow: hidden;
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      margin: 2rem auto;
+    }
     @media screen and (max-width: 767px) {
       margin: 1.5rem 0;
     }
   }
   h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     letter-spacing: 0.2rem;
     @media screen and (max-width: 767px) {
       font-size: 1.2rem;
@@ -449,7 +447,7 @@ body {
     }
   }
   h4 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     letter-spacing: 0.2rem;
     font-family: $font-en;
     @media screen and (max-width: 767px) {
@@ -457,7 +455,7 @@ body {
     }
   }
   p {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     letter-spacing: 0.2rem;
     margin: 2rem 0;
     @media screen and (max-width: 767px) {
@@ -477,7 +475,7 @@ body {
   }
   .s_about {
     margin: 4rem auto;
-    max-width: 88rem;
+    max-width: 960px;
     @include h-fontSize;
     @media screen and (max-width: 767px) {
       margin: 1rem auto;
@@ -509,6 +507,9 @@ body {
           letter-spacing: 0.2rem;
           display: flex;
           justify-content: center;
+          @media screen and (min-width: 768px) and (max-width: 1024px) {
+            font-size: 1.2rem;
+          }
           @media screen and (max-width: 767px) {
             font-size: 1.4rem;
           }
@@ -545,7 +546,7 @@ body {
   }
   .s_skill {
     margin: 4rem auto;
-    max-width: 88rem;
+    max-width: 960px;
     @include h-fontSize;
     @media screen and (max-width: 767px) {
       margin: 4rem auto 2rem;
@@ -553,6 +554,9 @@ body {
     &_container {
       display: flex;
       padding: 4rem 8rem;
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        padding: 2rem 1rem;
+      }
       @media screen and (max-width: 767px) {
         padding: 0;
         flex-direction: column;

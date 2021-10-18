@@ -261,7 +261,7 @@ body a {
 .footer {
   background: #1d809f;
   color: #fff;
-  padding: 3rem 4rem;
+  padding: 1rem 2rem;
   position: relative;
   text-align: center;
 }
@@ -432,7 +432,7 @@ body a {
 
 .work-page .work {
   margin: 0px auto;
-  max-width: 88rem;
+  max-width: 960px;
 }
 
 .work-page .swiper-container {
@@ -441,18 +441,18 @@ body a {
 }
 
 .work-page h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 0.2rem;
 }
 
 .work-page h4 {
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
   letter-spacing: 0.2rem;
 }
 
 .work-page p {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   letter-spacing: 0.2rem;
   margin: 2rem 0;
 }
@@ -473,7 +473,7 @@ body a {
 .profile-page .s_about {
   font-family: "Montserrat", sans-serif;
   margin: 4rem auto;
-  max-width: 88rem;
+  max-width: 960px;
   text-transform: capitalize;
 }
 
@@ -562,7 +562,7 @@ body a {
 .profile-page .s_skill {
   font-family: "Montserrat", sans-serif;
   margin: 4rem auto;
-  max-width: 88rem;
+  max-width: 960px;
   text-transform: capitalize;
 }
 
@@ -617,6 +617,15 @@ body a {
   }
   .s_hero_text_h2 {
     font-size: 3rem;
+  }
+  .nav ul {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
   }
   .s_works .wrap {
     -webkit-box-orient: vertical;
@@ -715,15 +724,6 @@ body a {
   .s_hero + .nav {
     display: none;
   }
-  .nav ul {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0;
-  }
   .nav ul li {
     letter-spacing: 0.1rem;
     padding: 1rem;
@@ -773,9 +773,6 @@ body a {
   }
   .s_works_article_text_caption {
     font-size: 1.4rem;
-  }
-  .footer {
-    padding: 1rem 2rem;
   }
   .work-page {
     padding: 4rem 2rem;
@@ -879,39 +876,42 @@ body a {
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .s_hero {
-    padding-top: 96rem;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .s_profile {
-    padding: 8rem 0;
+    padding: 2rem 0;
   }
   .s_works {
-    padding: 8rem 0;
+    padding: 2rem 0;
   }
   .work-page {
-    padding: 8rem 0;
+    padding: 2rem 0;
   }
   .profile-page {
-    padding: 8rem 0;
+    padding: 2rem 0;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .s_profile {
-    padding: 8rem 4rem;
+    padding: 2rem 1.5rem;
   }
   .s_works {
-    padding: 8rem 4rem;
+    padding: 2rem 1.5rem;
   }
   .work-page {
-    padding: 8rem 4rem;
+    padding: 2rem 1.5rem;
+  }
+  .work-page .swiper-container {
+    margin: 2rem auto;
   }
   .profile-page {
-    padding: 8rem 4rem;
+    padding: 2rem 1.5rem;
+  }
+  .profile-page .s_about_container_fig_caption {
+    font-size: 1.2rem;
+  }
+  .profile-page .s_skill_container {
+    padding: 2rem 1rem;
   }
 }
 
