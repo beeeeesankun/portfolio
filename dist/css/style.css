@@ -57,7 +57,6 @@ body a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1rem 2rem;
   margin: 0 4rem;
   text-transform: capitalize;
 }
@@ -713,8 +712,21 @@ body a {
   .s_hero_text_h2 {
     font-size: 1.4rem;
   }
-  .nav {
+  .s_hero + .nav {
     display: none;
+  }
+  .nav ul {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .nav ul li {
+    letter-spacing: 0.1rem;
+    padding: 1rem;
   }
   .s_profile {
     padding: 4rem 2rem;
@@ -768,8 +780,27 @@ body a {
   .work-page {
     padding: 4rem 2rem;
   }
+  .work-page {
+    padding: 2rem;
+  }
+  .work-page .swiper-container {
+    margin: 1.5rem 0;
+  }
+  .work-page h3 {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+  }
+  .work-page h4 {
+    font-size: 1rem;
+  }
+  .work-page p {
+    font-size: 1rem;
+  }
   .profile-page {
     padding: 4rem 2rem;
+  }
+  .profile-page {
+    padding: 2rem;
   }
   .profile-page .s_about_h2 {
     font-size: 2rem;
@@ -779,6 +810,39 @@ body a {
     font-size: 1.6rem;
     letter-spacing: 0.1rem;
   }
+  .profile-page .s_about {
+    margin: 1rem auto;
+  }
+  .profile-page .s_about_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .profile-page .s_about_container_fig {
+    width: 100%;
+  }
+  .profile-page .s_about_container_fig .img-wrap {
+    text-align: center;
+  }
+  .profile-page .s_about_container_fig img {
+    margin-bottom: 1rem;
+  }
+  .profile-page .s_about_container_fig_caption {
+    font-size: 1.4rem;
+  }
+  .profile-page .s_about_container_fig_caption li {
+    padding: 1rem 0 0;
+  }
+  .profile-page .s_about_container_article-wrap {
+    margin: 0;
+    width: 100%;
+  }
+  .profile-page .s_about_container_article_title {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin: 3rem 0 1rem;
+  }
   .profile-page .s_skill_h2 {
     font-size: 2rem;
     letter-spacing: 0.2rem;
@@ -786,6 +850,20 @@ body a {
   .profile-page .s_skill_h3 {
     font-size: 1.6rem;
     letter-spacing: 0.1rem;
+  }
+  .profile-page .s_skill {
+    margin: 4rem auto 2rem;
+  }
+  .profile-page .s_skill_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0;
+  }
+  .profile-page .s_skill_container_item {
+    margin: 2rem 0 0rem;
+    width: 100%;
   }
   .profile-page .s_skill_container_item.anime {
     -webkit-transition: all 500ms ease;

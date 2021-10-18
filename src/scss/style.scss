@@ -121,17 +121,27 @@ body {
 .nav {
   @include common_s;
   @media screen and (max-width: 767px) {
-    display: none;
+    .s_hero + & {
+      display: none;
+    }
   }
   ul {
     display: flex;
     text-transform: capitalize;
-    font-size: 1rem 2rem;
     margin: 0 4rem;
     border-bottom: 1px solid $subColor;
+    @media screen and (max-width: 767px) {
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
     li {
       padding: 2rem;
       letter-spacing: 0.2rem;
+      @media screen and (max-width: 767px) {
+        letter-spacing: 0.1rem;
+        padding: 1rem;
+      }
     }
   }
 }
@@ -416,6 +426,9 @@ body {
 .work-page {
   @include Padding;
   font-family: $font-ja;
+  @media screen and (max-width: 767px) {
+    padding: 2rem;
+  }
   .work {
     margin: 0px auto;
     max-width: 88rem;
@@ -423,20 +436,33 @@ body {
   .swiper-container {
     margin: 4rem auto;
     overflow: hidden;
+    @media screen and (max-width: 767px) {
+      margin: 1.5rem 0;
+    }
   }
   h3 {
     font-size: 2.5rem;
     letter-spacing: 0.2rem;
+    @media screen and (max-width: 767px) {
+      font-size: 1.2rem;
+      letter-spacing: 0;
+    }
   }
   h4 {
     font-size: 2rem;
     letter-spacing: 0.2rem;
     font-family: $font-en;
+    @media screen and (max-width: 767px) {
+      font-size: 1rem;
+    }
   }
   p {
     font-size: 1.8rem;
     letter-spacing: 0.2rem;
     margin: 2rem 0;
+    @media screen and (max-width: 767px) {
+      font-size: 1rem;
+    }
   }
   .link {
     display: flex;
@@ -446,27 +472,51 @@ body {
 .profile-page {
   @include Padding;
   font-family: $font-ja;
+  @media screen and (max-width: 767px) {
+    padding: 2rem;
+  }
   .s_about {
     margin: 4rem auto;
     max-width: 88rem;
     @include h-fontSize;
+    @media screen and (max-width: 767px) {
+      margin: 1rem auto;
+    }
     &_container {
       display: flex;
       align-items: center;
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
       &_fig {
         width: 35%;
         @include animation(0, -200px, 500ms);
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          .img-wrap {
+            text-align: center;
+          }
+        }
         img {
           border-radius: 50%;
           margin-bottom: 2rem;
+          @media screen and (max-width: 767px) {
+            margin-bottom: 1rem;
+          }
         }
         &_caption {
           font-size: 1.8rem;
           letter-spacing: 0.2rem;
           display: flex;
           justify-content: center;
+          @media screen and (max-width: 767px) {
+            font-size: 1.4rem;
+          }
           li {
             padding: 1.6rem 0 0;
+            @media screen and (max-width: 767px) {
+              padding: 1rem 0 0;
+            }
           }
         }
       }
@@ -475,11 +525,20 @@ body {
         &-wrap {
           width: 60%;
           margin: 0 0 0 5%;
+          @media screen and (max-width: 767px) {
+            margin: 0;
+            width: 100%;
+          }
         }
         &_title {
           font-size: 2rem;
           border-bottom: 1px solid $subColor;
           margin: 3rem 0;
+          @media screen and (max-width: 767px) {
+            letter-spacing: 2px;
+            font-size: 1.3rem;
+            margin: 3rem 0 1rem;
+          }
         }
       }
     }
@@ -488,9 +547,16 @@ body {
     margin: 4rem auto;
     max-width: 88rem;
     @include h-fontSize;
+    @media screen and (max-width: 767px) {
+      margin: 4rem auto 2rem;
+    }
     &_container {
       display: flex;
       padding: 4rem 8rem;
+      @media screen and (max-width: 767px) {
+        padding: 0;
+        flex-direction: column;
+      }
       &_item {
         width: calc(100% / 3 - 4rem);
         margin: 0 20px;
@@ -507,6 +573,8 @@ body {
         }
         @media screen and (max-width: 767px) {
           @include animation(5rem, 10rem, 500ms);
+          margin: 2rem 0 0rem;
+          width: 100%;
         }
         &_title {
           font-size: 2rem;

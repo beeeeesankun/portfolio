@@ -17,7 +17,7 @@ const scrollEvent = function () {
     let scrollValue = window.pageYOffset;
     let scrollEle = document.getElementsByClassName("anime");
     let windowHeight = window.innerHeight;
-    let value = 200;
+    let value = 100;
 
     for (let a = 0; a < scrollEle.length; a++) {
       let scrollTop = scrollEle[a].getBoundingClientRect().top + scrollValue;
