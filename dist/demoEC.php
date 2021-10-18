@@ -3,8 +3,8 @@ ini_set('display_errors', true);
 $title = 'demoEC admin';
 $pass = 'demoEC';
 $h3 = 'demoECショップ 管理画面';
-$h4 = 'Design / HTML,CSS /JavaScript / PHP';
-$p = 'こちらの制作物は';
+$h4 = 'Design / HTML,CSS /JavaScript / PHP / MYSQL';
+$p = 'こちらの制作物はPHPとSQLの学習のアウトプットとして作成した。<br><br>基本のセッションを利用したログイン・ログアウト機能、MYSQLと通信し基本的なCRUDでのDB操作をテーマに作成した。<br><br>管理者のアカウント管理や商品の管理画面を実装した。<br><br>email:test@gmail.com<br>password:masterpass<br><br>にてログイン可能。適当な情報でアカウントを作成いただくことも可能。<br><br>また、Vue.jsで作成したONLINESHOP ver(Vue.js) とJSONを利用し通信するAPI機能を実装中。';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
