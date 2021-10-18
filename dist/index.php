@@ -2,7 +2,7 @@
 <html lang="ja">
 
 <head>
-  <?php require '../dist/components/head.php'; ?>
+  <?php require './components/head.php'; ?>
   <title>portfolio</title>
 </head>
 
@@ -16,7 +16,7 @@
   <div class="nav">
     <ul>
       <li class="active"><a href="#hero">top</a></li>
-      <li><a href="./profile/">profile</a></li>
+      <li><a href="./profile.php">profile</a></li>
       <li><a href="#works">works</a></li>
     </ul>
   </div>
@@ -1142,7 +1142,7 @@
     </svg>
     <div class="s_profile_desc anime">
       <h2 class="s_profile_desc_h2">hello world.</h2>
-      <h3 class="s_profile_desc_h3">My name is Akihiro Fukabe.</h3>
+      <h3 class="s_profile_desc_h3">My name is <br class="tab"> Akihiro Fukabe.</h3>
       <div class='s_profile_desc_img-wrap'><img src='./img/icon.jpg' loading="lazy" alt=''></div>
       <ul class="s_profile_desc_list">
         <li class="s_profile_desc_list-item">名前：深辺　明寛</li>
@@ -2924,11 +2924,11 @@
         <article class="s_works_article amore anime">
           <a href="./amore.php">
             <div class="s_works_article_text">
-              <h3 class="s_works_article_text_h2">LPサイト（レストラン）</h3>
-              <p class="s_works_article_text_caption">[Design,HTML5,<br>CSS3(Sass),JavaScript(native)]</p>
+              <h3 class="s_works_article_text_h2">LPサイト<br class="sp">（レストラン）</h3>
+              <p class="s_works_article_text_caption">[Design,<br class="sp">HTML5,<br>CSS3(Sass),<br class="sp">JavaScript(native)]</p>
             </div>
             <picture class='s_works_article_img-wrap'>
-              <source srcset="./img/amore/amore-sp.jpg" media="(max-width:559px)" />
+              <source srcset="./img/amore/amore-sp.jpg" media="(max-width:767px)" />
               <img src='./img/amore/amore1.jpg' loading="lazy" alt=''>
             </picture>
           </a>
@@ -2936,11 +2936,11 @@
         <article class="s_works_article igarashi-education anime">
           <a href="./igarashi-education.php">
             <div class="s_works_article_text">
-              <h3 class="s_works_article_text_h2">企業サイト（教育）</h3>
-              <p class="s_works_article_text_caption">[HTML5,CSS3(Sass),<br>jQuery]</p>
+              <h3 class="s_works_article_text_h2">企業サイト<br class="sp">（教育）</h3>
+              <p class="s_works_article_text_caption">[HTML5,<br class="sp">CSS3(Sass),<br>jQuery]</p>
             </div>
             <picture class='s_works_article_img-wrap'>
-              <source srcset="./img/igarashi-education/igarashi-education1.jpg" media="(max-width:559px)" />
+              <source srcset="./img/igarashi-education/igarashi-education1.jpg" media="(max-width:767px)" />
               <img src='./img/igarashi-education/igarashi-education2.jpg' loading="lazy" alt=''>
             </picture>
           </a>
@@ -2948,11 +2948,11 @@
         <article class="s_works_article imaginary anime">
           <a href="./imaginary-online.php">
             <div class="s_works_article_text">
-              <h3 class="s_works_article_text_h2">ECサイト（アパレル）</h3>
-              <p class="s_works_article_text_caption">[HTML5,CSS3(Sass),JavaScript(native)]</p>
+              <h3 class="s_works_article_text_h2">ECサイト<br class="sp">（アパレル）</h3>
+              <p class="s_works_article_text_caption">[Design,<br class="sp">HTML5,<br class="sp">CSS3(Sass),<br>JavaScript(native)]</p>
             </div>
             <picture class='s_works_article_img-wrap'>
-              <source srcset="./img/imaginary/imaginary-online-sp.jpg" media="(max-width:559px)" />
+              <source srcset="./img/imaginary/imaginary-online-sp.jpg" media="(max-width:767px)" />
               <img src='./img/imaginary/imaginary1.jpg' loading="lazy" alt=''>
             </picture>
           </a>
@@ -2960,11 +2960,11 @@
         <article class="s_works_article kakigokoro anime">
           <a href="./kakigokoro.php">
             <div class="s_works_article_text">
-              <h3 class="s_works_article_text_h2">書道家　ホームページ</h3>
-              <p class="s_works_article_text_caption">[Planning,Design,HTML5,<br>CSS3(Sass),jQuery,PHP]</p>
+              <h3 class="s_works_article_text_h2">書道家<br class="sp">ホームページ</h3>
+              <p class="s_works_article_text_caption">[Planning,<br class="sp">Design,<br class="sp">HTML5,<br>CSS3(Sass),<br class="sp">jQuery,PHP]</p>
             </div>
             <picture class='s_works_article_img-wrap'>
-              <source srcset="./img/kakigokoro/kakigokoro-sp.jpg" media="(max-width:559px)" />
+              <source srcset="./img/kakigokoro/kakigokoro-sp.jpg" media="(max-width:767px)" />
               <img src='./img/kakigokoro/kakigokoro1.jpg' loading="lazy" alt=''>
             </picture>
           </a>

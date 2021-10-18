@@ -47,7 +47,7 @@ $p = '本制作物はLPを模した作品です。<br><br>デザイン面で工�
       <p><?php echo $p; ?>
       </p>
       <div class="link">
-        <a href=""><i class="fas fa-angle-double-left"></i>TOP</a>
+        <a href="./index.php#works"><i class="fas fa-angle-double-left"></i>TOP</a>
         <a href="./igarashi-education.php">NEXT<i class="fas fa-angle-double-right"></i></a>
       </div>
     </div>

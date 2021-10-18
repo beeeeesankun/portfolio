@@ -2,7 +2,7 @@
 <html lang="ja">
 
 <head>
-  <?php require '../dist/components/head.php'; ?>
+  <?php require './components/head.php'; ?>
   <title>profile</title>
 </head>
 

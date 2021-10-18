@@ -5,19 +5,19 @@ $font-en: "Montserrat", sans-serif;
 $font-ja: "Sawarabi Mincho", sans-serif;
 
 @mixin common_s {
-  max-width: 1440px;
+  max-width: 144rem;
   margin: 0 auto;
   position: relative;
 }
 @mixin Padding {
   @media screen and (min-width: 1024px) {
-    padding: 80px 0;
+    padding: 8rem 0;
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    padding: 80px 40px;
+    padding: 8rem 4rem;
   }
   @media screen and (max-width: 767px) {
-    padding: 40px 20px;
+    padding: 4rem 2rem;
   }
 }
 @mixin animation($x, $y, $transition) {
@@ -35,12 +35,20 @@ $font-ja: "Sawarabi Mincho", sans-serif;
   font-family: $font-en;
   text-transform: capitalize;
   &_h2 {
-    font-size: 30px;
-    letter-spacing: 4px;
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+    @media screen and (max-width: 767px) {
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+    }
   }
   &_h3 {
-    font-size: 25px;
-    letter-spacing: 2px;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    @media screen and (max-width: 767px) {
+      font-size: 1.6rem;
+      letter-spacing: 0.1rem;
+    }
   }
 }
 body {
@@ -53,13 +61,29 @@ body {
   a {
     color: initial;
   }
+  .tab {
+    @media screen and (min-width: 1025px) {
+      display: none;
+    }
+    @media screen and (max-width: 1024px) {
+      display: block;
+    }
+    .sp {
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+      @media screen and (max-width: 767px) {
+        display: block;
+      }
+    }
+  }
 }
 .s_hero {
   @include common_s;
-  background: url(../../dist/img/hero.jpg) no-repeat center/contain;
+  background: url(../img/hero.jpg) no-repeat center/contain;
   padding-top: 66.5vw;
   @media screen and (min-width: 1440px) {
-    padding-top: 960px;
+    padding-top: 96rem;
   }
   &_text {
     position: absolute;
@@ -70,29 +94,44 @@ body {
     text-align: center;
     font-family: $font-en;
     &_h1 {
-      font-size: 50px;
+      font-size: 5rem;
       margin: 0;
-      letter-spacing: 5px;
+      letter-spacing: 0.5rem;
+      @media screen and (max-width: 1024px) {
+        font-size: 4rem;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 2rem;
+      }
     }
     &_h2 {
-      font-size: 40px;
+      font-size: 4rem;
       margin: 0;
-      letter-spacing: 1px;
+      letter-spacing: 0.1rem;
       font-weight: 400;
+      @media screen and (max-width: 1024px) {
+        font-size: 3rem;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 1.4rem;
+      }
     }
   }
 }
 .nav {
   @include common_s;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   ul {
     display: flex;
     text-transform: capitalize;
-    font-size: 10px 20px;
-    margin: 0 40px;
+    font-size: 1rem 2rem;
+    margin: 0 4rem;
     border-bottom: 1px solid $subColor;
     li {
-      padding: 20px;
-      letter-spacing: 2px;
+      padding: 2rem;
+      letter-spacing: 0.2rem;
     }
   }
 }
@@ -105,30 +144,39 @@ body {
   &_svg {
     width: 30%;
     position: absolute;
-    @include animation(-200px, 0, 800ms);
+    @include animation(-20rem, 0, 800ms);
     &:first-child {
       right: 0;
-      top: 80px;
+      top: 8rem;
+      @media screen and (max-width: 767px) {
+        top: 2.5rem;
+      }
     }
     &:last-child {
       left: 0;
-      bottom: 80px;
+      bottom: 8rem;
+      @media screen and (max-width: 767px) {
+        bottom: 2.5rem;
+      }
     }
   }
   &_desc {
-    padding: 100px 40px;
+    padding: 10rem 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include animation(0, 200px, 1000ms);
+    @include animation(0, 20rem, 1000ms);
     @include h-fontSize;
+    @media screen and (max-width: 767px) {
+      padding: 0rem 0rem;
+    }
     &_img-wrap img {
       border-radius: 50%;
     }
     &_list {
       font-family: $font-ja;
       &-item {
-        margin: 16px 0;
+        margin: 1.6rem 0;
       }
     }
   }
@@ -136,8 +184,8 @@ body {
     text-align: center;
     button {
       display: inline-block;
-      padding: 7px 20px;
-      border-radius: 25px;
+      padding: 0.7rem 2rem;
+      border-radius: 2.5rem;
       text-decoration: none;
       color: #fff;
       background: rgba($subColor, $alpha: 0.5);
@@ -159,6 +207,9 @@ body {
   .wrap {
     display: flex;
     flex-wrap: wrap;
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
   }
   .inner {
     @include common_s;
@@ -166,17 +217,27 @@ body {
   &_article {
     margin: 20px;
     position: relative;
-    width: calc(50% - 40px);
+    width: calc(50% - 4rem);
+    @media screen and (max-width: 1024px) {
+      margin: 2rem 0;
+      width: 100%;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     @media screen and (min-width: 768px) {
       &:nth-child(odd) {
-        @include animation(0, 200px, 800ms);
+        @include animation(0, 20rem, 800ms);
       }
       &:nth-child(even) {
-        @include animation(0, 200px, 1600ms);
+        @include animation(0, 20rem, 1600ms);
       }
     }
     @media screen and (max-width: 767px) {
-      @include animation(0, 200px, 1000ms);
+      @include animation(0, 20rem, 1000ms);
     }
     &_text {
       position: absolute;
@@ -186,6 +247,16 @@ body {
       transform: translate(-50%, -50%);
       z-index: 10;
       font-family: $font-ja;
+      &_h2 {
+        font-size: 1.8rem;
+        word-break: keep-all;
+      }
+      &_caption {
+        font-size: 1.6rem;
+        @media screen and (max-width: 767px) {
+          font-size: 1.4rem;
+        }
+      }
     }
     &_img-wrap {
       &::before {
@@ -194,14 +265,9 @@ body {
         position: absolute;
         background: rgba($txtColor, 0.3);
         width: 100%;
-        padding-top: 29.5vw;
+        top: 0;
+        bottom: 0;
         transition: all 300ms ease;
-        @media screen and (min-width: 1440px) {
-          padding-top: 425px;
-        }
-        @media screen and (min-width: 768px) and (max-width: 1024px) {
-          padding-top: 25.6vw;
-        }
       }
     }
     a:hover {
@@ -214,12 +280,15 @@ body {
 .footer {
   background: $subColor;
   color: #fff;
-  padding: 30px 40px;
+  padding: 3rem 4rem;
   position: relative;
   text-align: center;
+  @media screen and (max-width: 767px) {
+    padding: 1rem 2rem;
+  }
   a {
     position: absolute;
-    right: 40px;
+    right: 4rem;
   }
 }
 .spinner-wrap {
@@ -305,8 +374,8 @@ body {
       position: fixed;
       top: 0;
       left: 0;
-      width: 10px;
-      height: 10px;
+      width: 0.1rem;
+      height: 0.1rem;
       background: #000;
       border-radius: 50%;
       z-index: 1001;
@@ -325,8 +394,8 @@ body {
       position: fixed;
       top: 0;
       left: 0;
-      width: 40px;
-      height: 40px;
+      width: 4rem;
+      height: 4rem;
       border-radius: 50%;
       background: #ddd;
       z-index: 1000;
@@ -349,25 +418,25 @@ body {
   font-family: $font-ja;
   .work {
     margin: 0px auto;
-    max-width: 880px;
+    max-width: 88rem;
   }
   .swiper-container {
-    margin: 40px auto;
+    margin: 4rem auto;
     overflow: hidden;
   }
   h3 {
-    font-size: 25px;
-    letter-spacing: 2px;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
   }
   h4 {
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
     font-family: $font-en;
   }
   p {
-    font-size: 18px;
-    letter-spacing: 2px;
-    margin: 20px 0;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    margin: 2rem 0;
   }
   .link {
     display: flex;
@@ -378,8 +447,8 @@ body {
   @include Padding;
   font-family: $font-ja;
   .s_about {
-    margin: 40px auto;
-    max-width: 880px;
+    margin: 4rem auto;
+    max-width: 88rem;
     @include h-fontSize;
     &_container {
       display: flex;
@@ -389,61 +458,61 @@ body {
         @include animation(0, -200px, 500ms);
         img {
           border-radius: 50%;
-          margin-bottom: 20px;
+          margin-bottom: 2rem;
         }
         &_caption {
-          font-size: 18px;
-          letter-spacing: 2px;
+          font-size: 1.8rem;
+          letter-spacing: 0.2rem;
           display: flex;
           justify-content: center;
           li {
-            padding: 16px 0 0;
+            padding: 1.6rem 0 0;
           }
         }
       }
       &_article {
-        @include animation(50px, 100px, 500ms);
+        @include animation(5rem, 10rem, 500ms);
         &-wrap {
           width: 60%;
           margin: 0 0 0 5%;
         }
         &_title {
-          font-size: 20px;
+          font-size: 2rem;
           border-bottom: 1px solid $subColor;
-          margin: 30px 0;
+          margin: 3rem 0;
         }
       }
     }
   }
   .s_skill {
-    margin: 40px auto;
-    max-width: 880px;
+    margin: 4rem auto;
+    max-width: 88rem;
     @include h-fontSize;
     &_container {
       display: flex;
-      padding: 40px 80px;
+      padding: 4rem 8rem;
       &_item {
-        width: calc(100% / 3 - 40px);
+        width: calc(100% / 3 - 4rem);
         margin: 0 20px;
         @media screen and (min-width: 768px) {
           &:first-child {
-            @include animation(0px, 200px, 600ms);
+            @include animation(0px, 20rem, 600ms);
           }
           &:nth-child(2) {
-            @include animation(0px, 200px, 1200ms);
+            @include animation(0px, 20rem, 1200ms);
           }
           &:last-child {
-            @include animation(0px, 200px, 1500ms);
+            @include animation(0px, 20rem, 1500ms);
           }
         }
         @media screen and (max-width: 767px) {
-          @include animation(50px, 100px, 500ms);
+          @include animation(5rem, 10rem, 500ms);
         }
         &_title {
-          font-size: 20px;
+          font-size: 2rem;
         }
         li {
-          margin: 10px 0 16px 10px;
+          margin: 1rem 0 1.6rem 1rem;
         }
       }
     }
