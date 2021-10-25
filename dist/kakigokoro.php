@@ -46,7 +46,8 @@ $link =  '<div class="link">
         <div class="swiper-button-next"></div>
         <div class="swiper-scrollbar"></div>
       </div>
-      <a href="https://fukabeakihiro.com/demoEC/" target="_blank" rel="noopener">
+
+      <a href="https://kakigokoro-haru.com/" target="_blank" rel="noopener">
         <h3><?php echo $h3; ?><i class="fas fa-external-link-alt"></i></h3>
       </a>
       <?php echo '<a>ソースコードは非公開</a>' ?>

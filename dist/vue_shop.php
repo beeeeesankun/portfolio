@@ -9,7 +9,7 @@ $githab = 'https://github.com/beeeeesankun/demo_shop';
 $start = '2021/9月';
 $link =  '<div class="link">
             <a href="./demoEC.php"><i class="fas fa-angle-double-left"></i>PREV</a>
-            <a href="./index.php#works">TOP<i class="fas fa-angle-double-right"></i></a>
+            <a href="./portfolio.php">NEXT<i class="fas fa-angle-double-right"></i></a>
           </div>';
 ?>
 <!DOCTYPE html>
@@ -45,7 +45,7 @@ $link =  '<div class="link">
         <div class="swiper-button-next"></div>
         <div class="swiper-scrollbar"></div>
       </div>
-      <a href="https://fukabeakihiro.com/demoEC/" target="_blank" rel="noopener">
+      <a href="https://fukabeakihiro.com/vue_shop/" target="_blank" rel="noopener">
         <h3><?php echo $h3; ?><i class="fas fa-external-link-alt"></i></h3>
       </a>
       <?php echo "<a class='githab' href='$githab' target='_blank' rel='noopener'>ソースコード<img src='./img/github.png'></a>" ?>

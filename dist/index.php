@@ -2961,7 +2961,7 @@
           <a href="./vue_shop.php">
             <div class="s_works_article_text">
               <h3 class="s_works_article_text_h2">ONLINESHOP ver(Vue.js)</h3>
-              <p class="s_works_article_text_caption">[Design / Vue.js(VueX)]</p>
+              <p class="s_works_article_text_caption">[Design,Vue.js(VueX)]</p>
             </div>
             <picture class='s_works_article_img-wrap'>
               <source srcset="./img/vue_shop/vue_shop-sp.jpg" media="(max-width:767px)" />
@@ -2969,9 +2969,22 @@
             </picture>
           </a>
         </article>
+        <article class="s_works_article portfolio anime">
+          <a href="./portfolio.php">
+            <div class="s_works_article_text">
+              <h3 class="s_works_article_text_h2">Portfolio</h3>
+              <p class="s_works_article_text_caption">[Design,HTML,CSS3(Sass),<br>JavaScript,PHP]</p>
+            </div>
+            <picture class='s_works_article_img-wrap'>
+              <source srcset="./img/portfolio/portfolio-sp.jpg" media="(max-width:767px)" />
+              <img src='./img/portfolio//portfolio1.jpg' loading="lazy" alt=''>
+            </picture>
+          </a>
+        </article>
       </div>
     </div>
   </section>
+
   <?php require_once('./components/footer.php') ?>
   <script src="./js/base.js"></script>
 </body>
