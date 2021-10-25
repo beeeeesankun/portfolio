@@ -4,9 +4,8 @@ $title = 'お釣り計算機';
 $pass = 'changer';
 $h3 = 'お釣り計算機';
 $h4 = 'HTML,CSS3,JavaScript';
-$p = '';
+$p = 'こちらはJSの練習で作った制作物である。<br><br>2日程(7時間程度)で作成した。HTMLとCSSは最低限のみの記述として可能な限りJSでの操作をするように制作した。<br><br>配列操作のmap()やfilter()を使用し、返り値にオブジェクトを返すような関数も作成し出来る限り簡略化されたコードになるよう意識し制作した。';
 $githab = 'https://github.com/beeeeesankun/changer/';
-$link = '';
 $start = '2021/10月';
 $link =  '<div class="link">
             <a href="./vue_shop.php"><i class="fas fa-angle-double-left"></i>PREV</a>

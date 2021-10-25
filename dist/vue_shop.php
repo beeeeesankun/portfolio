@@ -9,7 +9,7 @@ $githab = 'https://github.com/beeeeesankun/demo_shop';
 $start = '2021/9月';
 $link =  '<div class="link">
             <a href="./demoEC.php"><i class="fas fa-angle-double-left"></i>PREV</a>
-            <a href="./portfolio.php">NEXT<i class="fas fa-angle-double-right"></i></a>
+            <a href="./changer.php">NEXT<i class="fas fa-angle-double-right"></i></a>
           </div>';
 ?>
 <!DOCTYPE html>
