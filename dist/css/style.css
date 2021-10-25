@@ -534,7 +534,7 @@ body a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   justify-content: center;
   letter-spacing: 0.2rem;
 }

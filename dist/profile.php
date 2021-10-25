@@ -60,7 +60,7 @@
           <li>HTML5 </li>
           <li>CSS3 (Node-Sass)</li>
           <li>JavaScript</li>
-          <li>PHP</li>
+          <li>PHP*</li>
         </ul>
       </div>
       <div class="s_skill_container_item anime">

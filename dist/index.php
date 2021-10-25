@@ -2973,7 +2973,7 @@
           <a href="./portfolio.php">
             <div class="s_works_article_text">
               <h3 class="s_works_article_text_h2">Portfolio</h3>
-              <p class="s_works_article_text_caption">[Design,HTML,CSS3(Sass),<br>JavaScript,PHP]</p>
+              <p class="s_works_article_text_caption">[Design,HTML,<br class="sp">CSS3(Sass),<br>JavaScript,PHP]</p>
             </div>
             <picture class='s_works_article_img-wrap'>
               <source srcset="./img/portfolio/portfolio-sp.jpg" media="(max-width:767px)" />
