@@ -2969,6 +2969,18 @@
             </picture>
           </a>
         </article>
+        <article class="s_works_article changer anime">
+          <a href="./changer.php">
+            <div class="s_works_article_text">
+              <h3 class="s_works_article_text_h2">お釣り計算機</h3>
+              <p class="s_works_article_text_caption">[HTML,CSS3,JavaScript]</p>
+            </div>
+            <picture class='s_works_article_img-wrap'>
+              <source srcset="./img/changer/changer-sp.jpg" media="(max-width:767px)" />
+              <img src='./img/changer/changer1.jpg' loading="lazy" alt=''>
+            </picture>
+          </a>
+        </article>
         <article class="s_works_article portfolio anime">
           <a href="./portfolio.php">
             <div class="s_works_article_text">
