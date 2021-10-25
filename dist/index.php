@@ -2921,23 +2921,11 @@
     <div class="inner">
       <h2 class="s_works_h2">works</h2>
       <div class="wrap">
-        <article class="s_works_article amore anime">
-          <a href="./amore.php">
-            <div class="s_works_article_text">
-              <h3 class="s_works_article_text_h2">LPサイト<br class="sp">（レストラン）</h3>
-              <p class="s_works_article_text_caption">[Design,<br class="sp">HTML5,<br>CSS3(Sass),<br class="sp">JavaScript(native)]</p>
-            </div>
-            <picture class='s_works_article_img-wrap'>
-              <source srcset="./img/amore/amore-sp.jpg" media="(max-width:767px)" />
-              <img src='./img/amore/amore1.jpg' loading="lazy" alt=''>
-            </picture>
-          </a>
-        </article>
         <article class="s_works_article igarashi-education anime">
           <a href="./igarashi-education.php">
             <div class="s_works_article_text">
               <h3 class="s_works_article_text_h2">企業サイト<br class="sp">（教育）</h3>
-              <p class="s_works_article_text_caption">[HTML5,<br class="sp">CSS3(Sass),<br>jQuery]</p>
+              <p class="s_works_article_text_caption">[HTML5,<br class="sp">CSS3,<br>jQuery]</p>
             </div>
             <picture class='s_works_article_img-wrap'>
               <source srcset="./img/igarashi-education/igarashi-education1.jpg" media="(max-width:767px)" />
