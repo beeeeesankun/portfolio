@@ -4,7 +4,13 @@ $title = 'AMORE';
 $pass = 'amore';
 $h3 = 'レストラン AMORE';
 $h4 = 'Design / HTML,CSS(Sass) / JavaScript(native)';
-$p = '本制作物はLPを模した作品です。<br><br>デザイン面で工夫したことは実際のメニューを開いて見ていることをモチーフにスプリットレイアウトを採用し制作しました。<br><br>昨今のフロントエンド技術の変遷に伴い、モダンJSを使う前にある程度、jQuery等のライブラリを使わずに、JavaScripのみでプログラムを作ることを課題に制作を行いました。<br><br>制作にあたり苦労したことは、フェードイン、フェードアウトといったjQueryでは簡単に実装できたDOMの操作でした。<br><br>様々な技術書や記事などを参考にし時間制御と透過度の加算、減算、DOM操作について学びました。'
+$p = '本制作物はLPを模した作品です。<br><br>デザイン面で工夫したことは実際のメニューを開いて見ていることをモチーフにスプリットレイアウトを採用し制作しました。<br><br>昨今のフロントエンド技術の変遷に伴い、モダンJSを使う前にある程度、jQuery等のライブラリを使わずに、JavaScripのみでプログラムを作ることを課題に制作を行いました。<br><br>制作にあたり苦労したことは、フェードイン、フェードアウトといったjQueryでは簡単に実装できたDOMの操作でした。<br><br>様々な技術書や記事などを参考にし時間制御と透過度の加算、減算、DOM操作について学びました。';
+$githab = 'https://github.com/beeeeesankun/';
+$start = '2020/10月';
+$link =  '<div class="link">
+            <a href="./index.php#works"><i class="fas fa-angle-double-left"></i>TOP</a>
+            <a href="./igarashi-education.php">NEXT<i class="fas fa-angle-double-right"></i></a>
+          </div>';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -39,17 +45,16 @@ $p = '本制作物はLPを模した作品です。<br><br>デザイン面で工�
         <div class="swiper-button-next"></div>
         <div class="swiper-scrollbar"></div>
       </div>
-      <a href="https://fukabeakihiro.com/amore/" target="_blank" rel="noopener">
+      <a href="https://fukabeakihiro.com/demoEC/" target="_blank" rel="noopener">
         <h3><?php echo $h3; ?><i class="fas fa-external-link-alt"></i></h3>
       </a>
+      <?php echo "<a class='githab' href='$githab' target='_blank' rel='noopener'>ソースコード<img src='./img/github.png'></a>" ?>
       <h4><?php echo $h4; ?>
       </h4>
+      <?php echo '制作期間　' . $start . '〜' ?>
       <p><?php echo $p; ?>
       </p>
-      <div class="link">
-        <a href="./index.php#works"><i class="fas fa-angle-double-left"></i>TOP</a>
-        <a href="./igarashi-education.php">NEXT<i class="fas fa-angle-double-right"></i></a>
-      </div>
+      <?php echo $link;?>
     </div>
   </div>
   <?php require_once('./components/footer.php') ?>

@@ -5,6 +5,12 @@ $pass = 'vue_shop';
 $h3 = 'ONLINESHOP ver(Vue.js)';
 $h4 = 'Design / Vue.js(VueX)';
 $p = 'こちらの制作物は過去作のIMAGINNARY ONLINEをVue.jsで書き換えたものになる。<br><br>学習したVue.jsの基礎をアウトプットすることをテーマに作成した。<br><br>カート機能に関してはVueXを利用しより実践的になるよう工夫した。<br><br>また、demoECショップ 管理画面のものとJSONを利用し通信するAPI機能を実装中。';
+$githab = 'https://github.com/beeeeesankun/demo_shop';
+$start = '2021/9月';
+$link =  '<div class="link">
+            <a href="./demoEC.php"><i class="fas fa-angle-double-left"></i>PREV</a>
+            <a href="./index.php#works">TOP<i class="fas fa-angle-double-right"></i></a>
+          </div>';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -39,17 +45,16 @@ $p = 'こちらの制作物は過去作のIMAGINNARY ONLINEをVue.jsで書き換
         <div class="swiper-button-next"></div>
         <div class="swiper-scrollbar"></div>
       </div>
-      <a href="https://fukabeakihiro.com/vue_shop/" target="_blank" rel="noopener">
+      <a href="https://fukabeakihiro.com/demoEC/" target="_blank" rel="noopener">
         <h3><?php echo $h3; ?><i class="fas fa-external-link-alt"></i></h3>
       </a>
+      <?php echo "<a class='githab' href='$githab' target='_blank' rel='noopener'>ソースコード<img src='./img/github.png'></a>" ?>
       <h4><?php echo $h4; ?>
       </h4>
+      <?php echo '制作期間　' . $start . '〜' ?>
       <p><?php echo $p; ?>
       </p>
-      <div class="link">
-        <a href="./demoEC.php"><i class="fas fa-angle-double-left"></i>PREV</a>
-        <a href="./index.php#works">TOP<i class="fas fa-angle-double-right"></i></a>
-      </div>
+      <?php echo $link;?>
     </div>
   </div>
   <?php require_once('./components/footer.php') ?>

@@ -466,6 +466,15 @@ body a {
   justify-content: space-between;
 }
 
+.work-page .githab {
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+}
+
+.work-page .githab img {
+  max-width: 3.5rem;
+}
+
 .profile-page {
   font-family: "Sawarabi Mincho", sans-serif;
 }
@@ -673,6 +682,9 @@ body a {
     opacity: 1;
     transform: translate(0, 0);
   }
+  .s_works_article_text_caption .sp {
+    display: none;
+  }
   .profile-page .s_skill_container_item:first-child.anime {
     -webkit-transition: all 600ms ease;
     -webkit-transform: translate(0px, 20rem);
@@ -773,6 +785,9 @@ body a {
   }
   .s_works_article_text_caption {
     font-size: 1.4rem;
+  }
+  .s_works_article_text_caption .sp {
+    display: block;
   }
   .work-page {
     padding: 4rem 2rem;

@@ -2973,7 +2973,7 @@
           <a href="./demoEC.php">
             <div class="s_works_article_text">
               <h3 class="s_works_article_text_h2">demoECショップ 管理画面</h3>
-              <p class="s_works_article_text_caption">[Design,HTML,CSS,JavaScript,PHP,MYSQL]</p>
+              <p class="s_works_article_text_caption">[Design,HTML,CSS,<br>JavaScript,PHP,MYSQL]</p>
             </div>
             <picture class='s_works_article_img-wrap'>
               <source srcset="./img/demoEC/demoEC-sp.jpg" media="(max-width:767px)" />
