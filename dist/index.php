@@ -2933,18 +2933,6 @@
             </picture>
           </a>
         </article>
-        <article class="s_works_article imaginary anime">
-          <a href="./imaginary-online.php">
-            <div class="s_works_article_text">
-              <h3 class="s_works_article_text_h2">ECサイト<br class="sp">（アパレル）</h3>
-              <p class="s_works_article_text_caption">[Design,<br class="sp">HTML5,<br class="sp">CSS3(Sass),<br>JavaScript(native)]</p>
-            </div>
-            <picture class='s_works_article_img-wrap'>
-              <source srcset="./img/imaginary/imaginary-online-sp.jpg" media="(max-width:767px)" />
-              <img src='./img/imaginary/imaginary1.jpg' loading="lazy" alt=''>
-            </picture>
-          </a>
-        </article>
         <article class="s_works_article kakigokoro anime">
           <a href="./kakigokoro.php">
             <div class="s_works_article_text">
@@ -2970,7 +2958,7 @@
           </a>
         </article>
         <article class="s_works_article kakigokoro anime">
-          <a href="./kakigokoro.php">
+          <a href="./vue_shop.php">
             <div class="s_works_article_text">
               <h3 class="s_works_article_text_h2">ONLINESHOP ver(Vue.js)</h3>
               <p class="s_works_article_text_caption">[Design / Vue.js(VueX)]</p>

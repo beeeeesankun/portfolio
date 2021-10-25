@@ -5,11 +5,11 @@ $pass = 'igarashi-education';
 $h3 = 'Igarashi Education';
 $h4 = 'HTML / CSS(Sass) / jQuery';
 $p = '本制作物はwebデザイナーである<a href="https://twitter.com/ririru_123?s=20" target="_blank" rel="noopener">いがらし様(@ririru_123)</a>がデザインされた。<br><br>現場での実務を想定し、<a href="https://xd.adobe.com/view/1d8f310a-c359-4dbe-462f-9ee8d2e3d9ce-6bbe/" target="_blank" rel="noopener">adobeXDデザインカンプ</a>を元にコーディングをした。<br><br>デザインカンプはPCサイズ、タブレットサイズ、スマホサイズの３サイズ。こだわった点は、どの端末・ブラウザで見た際もレイアウトが崩れないことです。<br><br>そのために、端末の横幅を基準とし、値を全て相対値で指定をし、アスペクト比が変わらない様に制作した。<br><br>また、各ブラウザへ対応するためにIEは11以上、Androidは4.4以上、その他は最新2バージョンでベンダープレフィックスを指定することで対応した。制作期間は2020年11月25日より同年12月1日の7日間。制作時間は約20時間。';
-$githab = 'https://github.com/beeeeesankun/';
+$githab = 'https://github.com/beeeeesankun/Igarashi-Education';
 $start = '2020/12月';
 $link =  '<div class="link">
-<a href="./index.php#works"><i class="fas fa-angle-double-left"></i>TOP</a>
-            <a href="./imaginary-online.php">NEXT<i class="fas fa-angle-double-right"></i></a>
+            <a href="./index.php#works"><i class="fas fa-angle-double-left"></i>TOP</a>
+            <a href="./kakigokoro.php">NEXT<i class="fas fa-angle-double-right"></i></a>
           </div>';
 ?>
 <!DOCTYPE html>

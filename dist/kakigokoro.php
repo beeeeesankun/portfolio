@@ -8,7 +8,7 @@ $p = '本制作物は書道家『書き心』春流・破留のHPのリニュー
 $githab = 'https://github.com/beeeeesankun/';
 $start = '2020/2月';
 $link =  '<div class="link">
-            <a href="./imaginary-online.php"><i class="fas fa-angle-double-left"></i>PREV</a>
+            <a href="./igarashi-education.php"><i class="fas fa-angle-double-left"></i>PREV</a>
             <a href="./demoEC.php">NEXT<i class="fas fa-angle-double-right"></i></a>
           </div>';
 ?>
@@ -37,8 +37,9 @@ $link =  '<div class="link">
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img <?php echo 'src=./img/' . $pass . '/' . $pass .'1.jpg' ?> alt=""></div>
-          <div class="swiper-slide"><img <?php echo 'src=./img/' . $pass . '/' . $pass .'2.jpg' ?> alt=""></div>
-          <div class="swiper-slide"><img <?php echo 'src=./img/' . $pass . '/' . $pass .'3.jpg' ?> alt=""></div>
+          <div class="swiper-slide"><img <?php echo 'src=./img/' . $pass . '/' . $pass .'2.png' ?> alt=""></div>
+          <div class="swiper-slide"><img <?php echo 'src=./img/' . $pass . '/' . $pass .'3.png' ?> alt=""></div>
+          <div class="swiper-slide"><img <?php echo 'src=./img/' . $pass . '/' . $pass .'4.png' ?> alt=""></div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
@@ -48,7 +49,7 @@ $link =  '<div class="link">
       <a href="https://fukabeakihiro.com/demoEC/" target="_blank" rel="noopener">
         <h3><?php echo $h3; ?><i class="fas fa-external-link-alt"></i></h3>
       </a>
-      <?php echo "<a class='githab' href='$githab' target='_blank' rel='noopener'>ソースコード<img src='./img/github.png'></a>" ?>
+      <?php echo '<a>ソースコードは非公開</a>' ?>
       <h4><?php echo $h4; ?>
       </h4>
       <?php echo '制作期間　' . $start . '〜' ?>
