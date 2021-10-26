@@ -24,7 +24,6 @@
             <li>名前：深辺　明寛</li>
             <li>経験競技：水泳</li>
             <li>趣味：水泳、釣り、DIY</li>
-            <li>好きなもの：お酒<br>マイブームはハイボール</li>
             <li>尊敬する人：<br>UVERworldのTAKUYA∞</li>
           </ul>
         </figcaption>

@@ -2921,27 +2921,27 @@
     <div class="inner">
       <h2 class="s_works_h2">works</h2>
       <div class="wrap">
-        <article class="s_works_article igarashi-education anime">
-          <a href="./igarashi-education.php">
+        <article class="s_works_article portfolio anime">
+          <a href="./portfolio.php">
             <div class="s_works_article_text">
-              <h3 class="s_works_article_text_h2">企業サイト<br class="sp">（教育）</h3>
-              <p class="s_works_article_text_caption">[HTML5,<br class="sp">CSS3,<br>jQuery]</p>
+              <h3 class="s_works_article_text_h2">Portfolio</h3>
+              <p class="s_works_article_text_caption">[Design,HTML,<br class="sp">CSS3(Sass),<br>JavaScript,PHP]</p>
             </div>
             <picture class='s_works_article_img-wrap'>
-              <source srcset="./img/igarashi-education/igarashi-education1.jpg" media="(max-width:767px)" />
-              <img src='./img/igarashi-education/igarashi-education2.jpg' loading="lazy" alt=''>
+              <source srcset="./img/portfolio/portfolio-sp.jpg" media="(max-width:767px)" />
+              <img src='./img/portfolio//portfolio1.jpg' loading="lazy" alt=''>
             </picture>
           </a>
         </article>
-        <article class="s_works_article kakigokoro anime">
-          <a href="./kakigokoro.php">
+        <article class="s_works_article changer anime">
+          <a href="./changer.php">
             <div class="s_works_article_text">
-              <h3 class="s_works_article_text_h2">書道家<br class="sp">ホームページ</h3>
-              <p class="s_works_article_text_caption">[Planning,<br class="sp">Design,<br class="sp">HTML5,<br>CSS3(Sass),<br class="sp">jQuery,PHP]</p>
+              <h3 class="s_works_article_text_h2">お釣り計算機</h3>
+              <p class="s_works_article_text_caption">[HTML,CSS3,JavaScript]</p>
             </div>
             <picture class='s_works_article_img-wrap'>
-              <source srcset="./img/kakigokoro/kakigokoro-sp.jpg" media="(max-width:767px)" />
-              <img src='./img/kakigokoro/kakigokoro1.jpg' loading="lazy" alt=''>
+              <source srcset="./img/changer/changer-sp.jpg" media="(max-width:767px)" />
+              <img src='./img/changer/changer1.jpg' loading="lazy" alt=''>
             </picture>
           </a>
         </article>
@@ -2969,27 +2969,27 @@
             </picture>
           </a>
         </article>
-        <article class="s_works_article changer anime">
-          <a href="./changer.php">
+        <article class="s_works_article igarashi-education anime">
+          <a href="./igarashi-education.php">
             <div class="s_works_article_text">
-              <h3 class="s_works_article_text_h2">お釣り計算機</h3>
-              <p class="s_works_article_text_caption">[HTML,CSS3,JavaScript]</p>
+              <h3 class="s_works_article_text_h2">企業サイト<br class="sp">（教育）</h3>
+              <p class="s_works_article_text_caption">[HTML5,<br class="sp">CSS3,<br>jQuery]</p>
             </div>
             <picture class='s_works_article_img-wrap'>
-              <source srcset="./img/changer/changer-sp.jpg" media="(max-width:767px)" />
-              <img src='./img/changer/changer1.jpg' loading="lazy" alt=''>
+              <source srcset="./img/igarashi-education/igarashi-education1.jpg" media="(max-width:767px)" />
+              <img src='./img/igarashi-education/igarashi-education2.jpg' loading="lazy" alt=''>
             </picture>
           </a>
         </article>
-        <article class="s_works_article portfolio anime">
-          <a href="./portfolio.php">
+        <article class="s_works_article kakigokoro anime">
+          <a href="./kakigokoro.php">
             <div class="s_works_article_text">
-              <h3 class="s_works_article_text_h2">Portfolio</h3>
-              <p class="s_works_article_text_caption">[Design,HTML,<br class="sp">CSS3(Sass),<br>JavaScript,PHP]</p>
+              <h3 class="s_works_article_text_h2">書道家<br class="sp">ホームページ</h3>
+              <p class="s_works_article_text_caption">[Planning,<br class="sp">Design,<br class="sp">HTML5,<br>CSS3(Sass),<br class="sp">jQuery,PHP]</p>
             </div>
             <picture class='s_works_article_img-wrap'>
-              <source srcset="./img/portfolio/portfolio-sp.jpg" media="(max-width:767px)" />
-              <img src='./img/portfolio//portfolio1.jpg' loading="lazy" alt=''>
+              <source srcset="./img/kakigokoro/kakigokoro-sp.jpg" media="(max-width:767px)" />
+              <img src='./img/kakigokoro/kakigokoro1.jpg' loading="lazy" alt=''>
             </picture>
           </a>
         </article>
