@@ -4,12 +4,12 @@ $title = 'ONLINESHOP Vue.js';
 $pass = 'vue_shop';
 $h3 = 'ONLINESHOP ver(Vue.js)';
 $h4 = 'Design / Vue.js(VueX)';
-$p = 'こちらの制作物は過去作のIMAGINNARY ONLINEをVue.jsで書き換えたものになる。<br><br>学習したVue.jsの基礎をアウトプットすることをテーマに作成した。<br><br>カート機能に関してはVueXを利用しより実践的になるよう工夫した。<br><br>また、demoECショップ 管理画面のものとJSONを利用し通信するAPI機能を実装中。';
+$p = 'こちらの制作物は過去作のIMAGINNARY ONLINEをVue.jsで書き換えたものになる。<br><br>学習したVue.jsの基礎をアウトプットすることをテーマに作成した。<br><br>カート機能に関してはVueXを利用しより実践的になるよう工夫した。<br><br>また、demoECの管理画面(PREVの制作物)のものとJSONを利用し通信するAPI機能を実装しフロントとバックを繋げることをテーマに作成。<br><br>カート内の機能と決済機能(仮)は今後実装予定';
 $githab = 'https://github.com/beeeeesankun/demo_shop';
 $start = '2021/8月';
 $link =  '<div class="link">
             <a href="./demoEC.php"><i class="fas fa-angle-double-left"></i>PREV</a>
-            <a href="./changer.php">NEXT<i class="fas fa-angle-double-right"></i></a>
+            <a href="./igarashi-education.php">NEXT<i class="fas fa-angle-double-right"></i></a>
           </div>';
 ?>
 <!DOCTYPE html>

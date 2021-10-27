@@ -4,11 +4,11 @@ $title = 'demoEC admin';
 $pass = 'demoEC';
 $h3 = 'demoECショップ 管理画面';
 $h4 = 'Design / HTML,CSS /JavaScript / PHP / MYSQL';
-$p = 'こちらの制作物はPHPとSQLの学習のアウトプットとして作成した。<br><br>基本のセッションを利用したログイン・ログアウト機能、MYSQLと通信し基本的なCRUDでのDB操作をテーマに作成した。<br><br>管理者のアカウント管理や商品の管理画面を実装した。<br><br>email:test@gmail.com<br>password:masterpass<br><br>にてログイン可能。適当な情報でアカウントを作成いただくことも可能。<br><br>また、Vue.jsで作成したONLINESHOP ver(Vue.js) とJSONを利用し通信するAPI機能を実装中。';
+$p = 'こちらの制作物はPHPとSQLの学習のアウトプットとして作成した。<br><br>基本のセッションを利用したログイン・ログアウト機能、MYSQLと通信し基本的なCRUDでのDB操作をテーマに作成した。<br><br>管理者のアカウント管理や商品の管理画面を実装した。<br><br>email:test@gmail.com<br>password:masterpass<br><br>にてログイン可能。適当な情報でアカウントを作成いただくことも可能。<br><br>また、Vue.jsで作成したONLINESHOP(NEXTの制作物)とJSONを利用し通信するAPI機能を実装しフロントとバックを繋げることをテーマに作成。<br><br>こちらで登録した商品がONLINESHOP上に反映される。<br><br>購入処理をされた際の在庫管理機能は今後実装予定。';
 $githab = 'https://github.com/beeeeesankun/demoEC';
 $start = '2021/9月';
 $link =  '<div class="link">
-            <a href="./kakigokoro.php"><i class="fas fa-angle-double-left"></i>PREV</a>
+            <a href="./changer.php"><i class="fas fa-angle-double-left"></i>PREV</a>
             <a href="./vue_shop.php">NEXT<i class="fas fa-angle-double-right"></i></a>
           </div>';
 

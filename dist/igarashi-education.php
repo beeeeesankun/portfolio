@@ -8,7 +8,7 @@ $p = '本制作物はwebデザイナーである<a href="https://twitter.com/rir
 $githab = 'https://github.com/beeeeesankun/Igarashi-Education';
 $start = '2020/12月';
 $link =  '<div class="link">
-            <a href="./index.php#works"><i class="fas fa-angle-double-left"></i>TOP</a>
+            <a href="./vue_shop.php"><i class="fas fa-angle-double-left"></i>PREV</a>
             <a href="./kakigokoro.php">NEXT<i class="fas fa-angle-double-right"></i></a>
           </div>';
 ?>

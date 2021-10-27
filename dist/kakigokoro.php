@@ -9,7 +9,7 @@ $githab = 'https://github.com/beeeeesankun/';
 $start = '2020/2月';
 $link =  '<div class="link">
             <a href="./igarashi-education.php"><i class="fas fa-angle-double-left"></i>PREV</a>
-            <a href="./demoEC.php">NEXT<i class="fas fa-angle-double-right"></i></a>
+            <a href="./index.php#works">TOP<i class="fas fa-angle-double-right"></i></a>
           </div>';
 ?>
 <!DOCTYPE html>

@@ -8,8 +8,8 @@ $p = 'こちらはJSの練習で作った制作物である。<br><br>お釣り�
 $githab = 'https://github.com/beeeeesankun/changer/';
 $start = '2021/10月';
 $link =  '<div class="link">
-            <a href="./vue_shop.php"><i class="fas fa-angle-double-left"></i>PREV</a>
-            <a href="./portfolio.php">NEXT<i class="fas fa-angle-double-right"></i></a>
+            <a href="./portfolio.php"><i class="fas fa-angle-double-left"></i>PREV</a>
+            <a href="./demoEC.php">NEXT<i class="fas fa-angle-double-right"></i></a>
           </div>';
 
 ?>

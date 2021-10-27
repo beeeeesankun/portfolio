@@ -8,8 +8,8 @@ $p = 'こちらは本ポートフォリオのページである。<br><br>以前
 $githab = 'https://github.com/beeeeesankun/portfolio';
 $start = '2021/10月';
 $link =  '<div class="link">
-            <a href="./changer.php"><i class="fas fa-angle-double-left"></i>PREV</a>
-            <a href="./index.php#works">TOP<i class="fas fa-angle-double-right"></i></a>
+            <a href="./index.php#works"><i class="fas fa-angle-double-left"></i>TOP</a>
+            <a href="./changer.php">NEXT<i class="fas fa-angle-double-right"></i></a>
           </div>';
 
 ?>
