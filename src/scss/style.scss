@@ -263,6 +263,14 @@ body {
         font-size: 1.6rem;
         @media screen and (max-width: 767px) {
           font-size: 1.4rem;
+          .sp {
+            display: block;
+          }
+        }
+        @media screen and (min-width: 768px) {
+          .sp {
+            display: none;
+          }
         }
       }
     }
@@ -466,6 +474,13 @@ body {
     display: flex;
     justify-content: space-between;
   }
+  .githab {
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    img {
+      max-width: 3.5rem;
+    }
+  }
 }
 .profile-page {
   @include Padding;
@@ -503,7 +518,7 @@ body {
           }
         }
         &_caption {
-          font-size: 1.8rem;
+          font-size: 1.6rem;
           letter-spacing: 0.2rem;
           display: flex;
           justify-content: center;

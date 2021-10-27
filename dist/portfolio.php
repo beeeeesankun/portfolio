@@ -1,10 +1,17 @@
 <?php
 ini_set('display_errors', true);
-$title = 'IMAGINARY ONLINE';
-$pass = 'imaginary';
-$h3 = 'IMAGINNARY ONLINE';
-$h4 = 'Design / HTML,CSS(Sass) / JavaScript(native)';
-$p = '本制作物はECサイトのトップページを模して制作しました。<br><br>工夫したことは、Photoshop等の練習を兼ねて、画像やバナーの多いアパレル系のECサイトを課題としました。<br><br>また、この制作物もJavaScriptのみで実装しました。<br><br>苦労したことは、サイト中央でのカテゴリーでのフィルター機能。<br><br>また、商品をカートへ追加することや個数の選択と削除、合計金額の表示等のカート機能の実装が大変でした。<br><br>具体的には、HTMLCollectionオブジェクトを知識として知るまでが既存の知識や考え方では制作が進まず非常に時間がかかりました。';
+$title = 'portfolio';
+$pass = 'portfolio';
+$h3 = 'portfolio';
+$h4 = 'Design,HTML,CSS3(Sass),JavaScript,PHP';
+$p = 'こちらは本ポートフォリオのページである。<br><br>以前作成したポートフォリオをPHPをベースに再作成した。<br><br>今後拡張する際にページの作成が簡単になるように共通部分をテンプレート化した。<br><br>また、HTMLとCSSはBEM記法で作成した。';
+$githab = 'https://github.com/beeeeesankun/portfolio';
+$start = '2021/10月';
+$link =  '<div class="link">
+            <a href="./index.php#works"><i class="fas fa-angle-double-left"></i>TOP</a>
+            <a href="./changer.php">NEXT<i class="fas fa-angle-double-right"></i></a>
+          </div>';
+
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -39,17 +46,16 @@ $p = '本制作物はECサイトのトップページを模して制作しまし
         <div class="swiper-button-next"></div>
         <div class="swiper-scrollbar"></div>
       </div>
-      <a href="https://fukabeakihiro.com/imaginary-online/" target="_blank" rel="noopener">
+      <a href="https://fukabeakihiro.com/demoEC/" target="_blank" rel="noopener">
         <h3><?php echo $h3; ?><i class="fas fa-external-link-alt"></i></h3>
       </a>
+      <?php echo "<a class='githab' href='$githab' target='_blank' rel='noopener'>ソースコード<img src='./img/github.png'></a>" ?>
       <h4><?php echo $h4; ?>
       </h4>
+      <?php echo '制作期間　' . $start . '〜' ?>
       <p><?php echo $p; ?>
       </p>
-      <div class="link">
-        <a href="./igarashi-education.php"><i class="fas fa-angle-double-left"></i>PREV</a>
-        <a href="./kakigokoro.php">NEXT<i class="fas fa-angle-double-right"></i></a>
-      </div>
+      <?php echo $link;?>
     </div>
   </div>
   <?php require_once('./components/footer.php') ?>

@@ -2921,15 +2921,51 @@
     <div class="inner">
       <h2 class="s_works_h2">works</h2>
       <div class="wrap">
-        <article class="s_works_article amore anime">
-          <a href="./amore.php">
+        <article class="s_works_article portfolio anime">
+          <a href="./portfolio.php">
             <div class="s_works_article_text">
-              <h3 class="s_works_article_text_h2">LPサイト<br class="sp">（レストラン）</h3>
-              <p class="s_works_article_text_caption">[Design,<br class="sp">HTML5,<br>CSS3(Sass),<br class="sp">JavaScript(native)]</p>
+              <h3 class="s_works_article_text_h2">Portfolio</h3>
+              <p class="s_works_article_text_caption">[Design,HTML,<br class="sp">CSS3(Sass),<br>JavaScript,PHP]</p>
             </div>
             <picture class='s_works_article_img-wrap'>
-              <source srcset="./img/amore/amore-sp.jpg" media="(max-width:767px)" />
-              <img src='./img/amore/amore1.jpg' loading="lazy" alt=''>
+              <source srcset="./img/portfolio/portfolio-sp.jpg" media="(max-width:767px)" />
+              <img src='./img/portfolio//portfolio1.jpg' loading="lazy" alt=''>
+            </picture>
+          </a>
+        </article>
+        <article class="s_works_article changer anime">
+          <a href="./changer.php">
+            <div class="s_works_article_text">
+              <h3 class="s_works_article_text_h2">お釣り計算機</h3>
+              <p class="s_works_article_text_caption">[HTML,CSS3,JavaScript]</p>
+            </div>
+            <picture class='s_works_article_img-wrap'>
+              <source srcset="./img/changer/changer-sp.jpg" media="(max-width:767px)" />
+              <img src='./img/changer/changer1.jpg' loading="lazy" alt=''>
+            </picture>
+          </a>
+        </article>
+        <article class="s_works_article demoEC anime">
+          <a href="./demoEC.php">
+            <div class="s_works_article_text">
+              <h3 class="s_works_article_text_h2">demoECショップ 管理画面</h3>
+              <p class="s_works_article_text_caption">[Design,HTML,CSS,<br>JavaScript,PHP,MYSQL]</p>
+            </div>
+            <picture class='s_works_article_img-wrap'>
+              <source srcset="./img/demoEC/demoEC-sp.jpg" media="(max-width:767px)" />
+              <img src='./img/demoEC/demoEC1.jpg' loading="lazy" alt=''>
+            </picture>
+          </a>
+        </article>
+        <article class="s_works_article kakigokoro anime">
+          <a href="./vue_shop.php">
+            <div class="s_works_article_text">
+              <h3 class="s_works_article_text_h2">ONLINESHOP ver(Vue.js)</h3>
+              <p class="s_works_article_text_caption">[Design,Vue.js(VueX)]</p>
+            </div>
+            <picture class='s_works_article_img-wrap'>
+              <source srcset="./img/vue_shop/vue_shop-sp.jpg" media="(max-width:767px)" />
+              <img src='./img/vue_shop/vue_shop1.jpg' loading="lazy" alt=''>
             </picture>
           </a>
         </article>
@@ -2937,23 +2973,11 @@
           <a href="./igarashi-education.php">
             <div class="s_works_article_text">
               <h3 class="s_works_article_text_h2">企業サイト<br class="sp">（教育）</h3>
-              <p class="s_works_article_text_caption">[HTML5,<br class="sp">CSS3(Sass),<br>jQuery]</p>
+              <p class="s_works_article_text_caption">[HTML5,<br class="sp">CSS3,<br>jQuery]</p>
             </div>
             <picture class='s_works_article_img-wrap'>
               <source srcset="./img/igarashi-education/igarashi-education1.jpg" media="(max-width:767px)" />
               <img src='./img/igarashi-education/igarashi-education2.jpg' loading="lazy" alt=''>
-            </picture>
-          </a>
-        </article>
-        <article class="s_works_article imaginary anime">
-          <a href="./imaginary-online.php">
-            <div class="s_works_article_text">
-              <h3 class="s_works_article_text_h2">ECサイト<br class="sp">（アパレル）</h3>
-              <p class="s_works_article_text_caption">[Design,<br class="sp">HTML5,<br class="sp">CSS3(Sass),<br>JavaScript(native)]</p>
-            </div>
-            <picture class='s_works_article_img-wrap'>
-              <source srcset="./img/imaginary/imaginary-online-sp.jpg" media="(max-width:767px)" />
-              <img src='./img/imaginary/imaginary1.jpg' loading="lazy" alt=''>
             </picture>
           </a>
         </article>
@@ -2969,33 +2993,10 @@
             </picture>
           </a>
         </article>
-        <article class="s_works_article demoEC anime">
-          <a href="./demoEC.php">
-            <div class="s_works_article_text">
-              <h3 class="s_works_article_text_h2">demoECショップ 管理画面</h3>
-              <p class="s_works_article_text_caption">[Design,HTML,CSS,JavaScript,PHP,MYSQL]</p>
-            </div>
-            <picture class='s_works_article_img-wrap'>
-              <source srcset="./img/demoEC/demoEC-sp.jpg" media="(max-width:767px)" />
-              <img src='./img/demoEC/demoEC1.jpg' loading="lazy" alt=''>
-            </picture>
-          </a>
-        </article>
-        <article class="s_works_article kakigokoro anime">
-          <a href="./kakigokoro.php">
-            <div class="s_works_article_text">
-              <h3 class="s_works_article_text_h2">ONLINESHOP ver(Vue.js)</h3>
-              <p class="s_works_article_text_caption">[Design / Vue.js(VueX)]</p>
-            </div>
-            <picture class='s_works_article_img-wrap'>
-              <source srcset="./img/vue_shop/vue_shop-sp.jpg" media="(max-width:767px)" />
-              <img src='./img/vue_shop/vue_shop1.jpg' loading="lazy" alt=''>
-            </picture>
-          </a>
-        </article>
       </div>
     </div>
   </section>
+
   <?php require_once('./components/footer.php') ?>
   <script src="./js/base.js"></script>
 </body>
